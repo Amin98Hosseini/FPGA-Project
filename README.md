@@ -41,12 +41,58 @@ Designed for both educational purposes and practical FPGA implementation, these 
   - Clean hierarchy and modular design
 
 ## Repository Structure
-VHDL/
-├── basic_gates/ - Fundamental logic gates
-├── alu/ - 4-bit Arithmetic Logic Unit
-├── flip_flops/ - Various flip-flop implementations
-├── registers/ - Memory registers and shift registers
-├── uart/ - UART transmitter and receiver
-├── pwm/ - PWM controller module
-├── seven_segment/ - Display driver circuits
-└── testbenches/ - Simulation testbenches for verification
+# FPGA Project - VHDL
+
+## Overview
+This repository contains VHDL implementations for FPGA-based projects. The code is designed for efficient digital design and hardware implementation using VHDL.
+
+## Repository Structure
+```
+FPGA-Project/
+│-- VHDL/
+│   │-- src/             # Source VHDL files
+│   │-- testbench/       # Testbench files for simulation
+│   │-- docs/            # Documentation and reference materials
+│   │-- constraints/     # Constraint files for FPGA synthesis
+│   │-- simulation/      # Simulation results and waveforms
+│   └-- README.md        # Project documentation
+```
+
+## Getting Started
+### Prerequisites
+To work with this project, you need the following tools installed:
+- **Vivado / Quartus / ModelSim / GHDL** (for synthesis and simulation)
+- **VHDL Compiler** (for compiling the VHDL code)
+- **Waveform Viewer** (for debugging and analyzing signals)
+
+### Cloning the Repository
+```sh
+git clone https://github.com/Amin98Hosseini/FPGA-Project.git
+cd FPGA-Project/VHDL
+```
+
+## Usage
+1. Open the VHDL source files in your preferred FPGA development tool.
+2. Run the testbench files in a simulator to verify functionality.
+3. Synthesize and implement the design on an FPGA.
+4. Check the waveform results and optimize the design if necessary.
+
+## Features
+- Modular VHDL design
+- Testbench verification for each module
+- FPGA constraints for different boards
+- Optimized for synthesis and hardware implementation
+
+## Contribution
+Contributions are welcome! To contribute:
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Submit a pull request
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
+
+## Author
+**Amin98Hosseini**  
+GitHub: [Amin98Hosseini](https://github.com/Amin98Hosseini)
