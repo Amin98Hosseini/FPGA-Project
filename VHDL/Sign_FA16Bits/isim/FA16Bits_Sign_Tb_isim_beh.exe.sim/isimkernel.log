@@ -1,0 +1,28 @@
+Command line:
+   FA16Bits_Sign_Tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49164
+
+Sat Feb 15 20:50:36 2025
+
+
+ Elaboration Time: 0.125 sec
+
+ Current Memory Usage: 672.297 Meg
+
+ Total Signals          : 11
+ Total Nets             : 67
+ Total Signal Drivers   : 6
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 4
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 550
+
+ Total Simulation Time: 0.15625 sec
+
+ Current Memory Usage: 672.297 Meg
+
+Sat Feb 15 20:50:45 2025
+

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="MUX4To1_Whenelse.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="MUX4To1_When.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MUX4To1_When.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MUX4To1_When.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="MUX4To1_When.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="MUX4To1_When.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="MUX4To1_When.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="MUX4To1_When.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="MUX4To1_When.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="MUX4To1_When.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="MUX4To1_When.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX4To1_When.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="MUX4To1_When.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="MUX4To1_When.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="MUX4To1_When.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="MUX4To1_When.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="MUX4To1_When.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="MUX4To1_When.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="MUX4To1_When.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MUX4To1_When.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="MUX4To1_When_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MUX4To1_When_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MUX4To1_When_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="MUX4To1_When_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="MUX4To1_When_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MUX4To1_When_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MUX4To1_When_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="MUX4To1_When_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="MUX4To1_When_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MUX4To1_When_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MUX4To1_When_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="MUX4To1_When_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="MUX4To1_When_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MUX4To1_When_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1740159925" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1740159925">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1740159925" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="461505431332563220" xil_pn:start_ts="1740159925">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1740159925" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-3175270750587540156" xil_pn:start_ts="1740159925">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1740159925" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1740159925">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1740159925" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-6706717215286110314" xil_pn:start_ts="1740159925">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1740159925" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1740159925">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1740159925" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8619541252351213682" xil_pn:start_ts="1740159925">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1740159931" xil_pn:in_ck="-4413106170641164285" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-1400614757551250275" xil_pn:start_ts="1740159925">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="MUX4To1_When.lso"/>
+      <outfile xil_pn:name="MUX4To1_When.ngc"/>
+      <outfile xil_pn:name="MUX4To1_When.ngr"/>
+      <outfile xil_pn:name="MUX4To1_When.prj"/>
+      <outfile xil_pn:name="MUX4To1_When.stx"/>
+      <outfile xil_pn:name="MUX4To1_When.syr"/>
+      <outfile xil_pn:name="MUX4To1_When.xst"/>
+      <outfile xil_pn:name="MUX4To1_When_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1740159931" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-2631165040677745909" xil_pn:start_ts="1740159931">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1740159936" xil_pn:in_ck="-4413106170641173031" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-3661607866791806769" xil_pn:start_ts="1740159931">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="MUX4To1_When.bld"/>
+      <outfile xil_pn:name="MUX4To1_When.ngd"/>
+      <outfile xil_pn:name="MUX4To1_When_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1740159944" xil_pn:in_ck="-4413106170641173030" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1740159936">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="MUX4To1_When.pcf"/>
+      <outfile xil_pn:name="MUX4To1_When_map.map"/>
+      <outfile xil_pn:name="MUX4To1_When_map.mrp"/>
+      <outfile xil_pn:name="MUX4To1_When_map.ncd"/>
+      <outfile xil_pn:name="MUX4To1_When_map.ngm"/>
+      <outfile xil_pn:name="MUX4To1_When_map.xrpt"/>
+      <outfile xil_pn:name="MUX4To1_When_summary.xml"/>
+      <outfile xil_pn:name="MUX4To1_When_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1740159953" xil_pn:in_ck="4265137567959704051" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1740159944">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="MUX4To1_When.ncd"/>
+      <outfile xil_pn:name="MUX4To1_When.pad"/>
+      <outfile xil_pn:name="MUX4To1_When.par"/>
+      <outfile xil_pn:name="MUX4To1_When.ptwx"/>
+      <outfile xil_pn:name="MUX4To1_When.unroutes"/>
+      <outfile xil_pn:name="MUX4To1_When.xpi"/>
+      <outfile xil_pn:name="MUX4To1_When_pad.csv"/>
+      <outfile xil_pn:name="MUX4To1_When_pad.txt"/>
+      <outfile xil_pn:name="MUX4To1_When_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1740159953" xil_pn:in_ck="-4413106170641173162" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1740159949">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="MUX4To1_When.twr"/>
+      <outfile xil_pn:name="MUX4To1_When.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

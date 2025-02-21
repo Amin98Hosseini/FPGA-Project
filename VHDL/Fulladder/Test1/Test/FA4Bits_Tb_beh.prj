@@ -1,0 +1,3 @@
+vhdl work "fulladder.vhd"
+vhdl work "FA_4bits.vhd"
+vhdl work "FA4Bits_Tb.vhd"

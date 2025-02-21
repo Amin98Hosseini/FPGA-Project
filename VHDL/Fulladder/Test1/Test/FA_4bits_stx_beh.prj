@@ -1,0 +1,2 @@
+vhdl isim_temp "fulladder.vhd"
+vhdl isim_temp "FA_4bits.vhd"

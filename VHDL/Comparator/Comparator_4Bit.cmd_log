@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Comparator/Comparator_4Bit.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Comparator/Comparator_4Bit.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Comparator/Comparator_4Bit.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Comparator/Comparator_4Bit.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Comparator/Comparator_4Bit.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Comparator/Comparator_4Bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Comparator_4Bit.ngc Comparator_4Bit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Comparator_4Bit_map.ncd Comparator_4Bit.ngd Comparator_4Bit.pcf 
+par -w -intstyle ise -ol high -mt off Comparator_4Bit_map.ncd Comparator_4Bit.ncd Comparator_4Bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Comparator_4Bit.twx Comparator_4Bit.ncd -o Comparator_4Bit.twr Comparator_4Bit.pcf 

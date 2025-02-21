@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/MUX4To1_Whenelse/MUX4To1_When.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/MUX4To1_Whenelse/MUX4To1_When.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 MUX4To1_When.ngc MUX4To1_When.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MUX4To1_When_map.ncd MUX4To1_When.ngd MUX4To1_When.pcf 
+par -w -intstyle ise -ol high -mt off MUX4To1_When_map.ncd MUX4To1_When.ncd MUX4To1_When.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MUX4To1_When.twx MUX4To1_When.ncd -o MUX4To1_When.twr MUX4To1_When.pcf 

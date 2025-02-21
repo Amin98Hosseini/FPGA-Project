@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Test1/Test/FA_4bits.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Test1/Test/FA_4bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 FA_4bits.ngc FA_4bits.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FA_4bits_map.ncd FA_4bits.ngd FA_4bits.pcf 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Test1/Test/FA_4bits.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Test1/Test/FA_4bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 FA_4bits.ngc FA_4bits.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FA_4bits_map.ncd FA_4bits.ngd FA_4bits.pcf 
+par -w -intstyle ise -ol high -mt off FA_4bits_map.ncd FA_4bits.ncd FA_4bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FA_4bits.twx FA_4bits.ncd -o FA_4bits.twr FA_4bits.pcf 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Test1/Test/FA_4bits.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Test1/Test/FA_4bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 FA_4bits.ngc FA_4bits.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FA_4bits_map.ncd FA_4bits.ngd FA_4bits.pcf 
+par -w -intstyle ise -ol high -mt off FA_4bits_map.ncd FA_4bits.ncd FA_4bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FA_4bits.twx FA_4bits.ncd -o FA_4bits.twr FA_4bits.pcf 

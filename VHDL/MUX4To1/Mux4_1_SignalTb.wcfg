@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Amin/Documents/FPGA_Project/MUX4To1/MUX4_1_TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="mux4_1_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="7" />
+   <wave_markers>
+      <marker time="160000000" label="" />
+      <marker time="110000000" label="" />
+      <marker time="120000000" label="" />
+      <marker time="40000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/mux4_1_tb/w0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">w0</obj_property>
+      <obj_property name="ObjectShortName">w0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux4_1_tb/w1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">w1</obj_property>
+      <obj_property name="ObjectShortName">w1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux4_1_tb/w2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">w2</obj_property>
+      <obj_property name="ObjectShortName">w2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux4_1_tb/w3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">w3</obj_property>
+      <obj_property name="ObjectShortName">w3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux4_1_tb/en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux4_1_tb/s" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux4_1_tb/f" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">f</obj_property>
+      <obj_property name="ObjectShortName">f</obj_property>
+   </wvobject>
+</wave_config>

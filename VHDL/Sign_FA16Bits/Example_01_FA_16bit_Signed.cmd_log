@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Sign_FA16Bits/Example_01_FA_16bit_Signed.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Sign_FA16Bits/Example_01_FA_16bit_Signed.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Example_01_FA_16bit_Signed.ngc Example_01_FA_16bit_Signed.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Example_01_FA_16bit_Signed_map.ncd Example_01_FA_16bit_Signed.ngd Example_01_FA_16bit_Signed.pcf 
+par -w -intstyle ise -ol high -mt off Example_01_FA_16bit_Signed_map.ncd Example_01_FA_16bit_Signed.ncd Example_01_FA_16bit_Signed.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Example_01_FA_16bit_Signed.twx Example_01_FA_16bit_Signed.ncd -o Example_01_FA_16bit_Signed.twr Example_01_FA_16bit_Signed.pcf 
