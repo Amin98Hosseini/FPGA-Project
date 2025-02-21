@@ -61,7 +61,7 @@ FPGA-Project/
 ## Getting Started
 ### Prerequisites
 To work with this project, you need the following tools installed:
-- **Vivado / Quartus / ModelSim / GHDL** (for synthesis and simulation)
+- ** ISE / Vivado / Quartus / ModelSim / GHDL** (for synthesis and simulation)
 - **VHDL Compiler** (for compiling the VHDL code)
 - **Waveform Viewer** (for debugging and analyzing signals)
 
