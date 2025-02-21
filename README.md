@@ -41,3 +41,25 @@ Designed for both educational purposes and practical FPGA implementation, these 
   - Clean hierarchy and modular design
 
 ## Repository Structure
+VHDL/
+├── basic_gates/ - Fundamental logic gates
+├── alu/ - 4-bit Arithmetic Logic Unit
+├── flip_flops/ - Various flip-flop implementations
+├── registers/ - Memory registers and shift registers
+├── uart/ - UART transmitter and receiver
+├── pwm/ - PWM controller module
+├── seven_segment/ - Display driver circuits
+└── testbenches/ - Simulation testbenches for verification
+
+
+## Getting Started
+### Prerequisites
+- VHDL knowledge and simulation experience
+- FPGA development tools (Xilinx Vivado/ISE, Quartus, or similar)
+- HDL simulator (ModelSim, GHDL, or similar)
+- Compatible FPGA board
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Amin98Hosseini/FPGA-Project.git
