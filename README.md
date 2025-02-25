@@ -68,11 +68,7 @@ To use these examples, follow these steps:
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-
+```
 
 3. **Open the Project in Vivado**:
 - Launch Vivado and create a new project.
