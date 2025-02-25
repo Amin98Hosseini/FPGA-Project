@@ -1,6 +1,6 @@
 # Digital Implementation in FPGA (Spartan-6 and Zynq-7020)
 
-<img src="https://download.logo.wine/logo/Xilinx/Xilinx-Logo.wine.png" alt="Alt Text" width="50" height="30">
+<img src="https://companieslogo.com/img/orig/XLNX-e61d7a44.png" alt="Alt Text" width="50" height="30">
 
 
 This repository contains sample and example code for digital design implementation in FPGAs using **VHDL**. The examples are designed to work with **Xilinx Spartan-6** (using Xilinx ISE) and **Zynq-7020** (using Xilinx Vivado) FPGAs. The code demonstrates fundamental digital logic components and their implementation in hardware description languages (HDLs).
