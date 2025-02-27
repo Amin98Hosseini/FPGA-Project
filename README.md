@@ -35,6 +35,7 @@ Here is a list of the available examples in this repository:
 8. **Priority_Encoder_Process**: A priority encoder implemented using a `process` block.
 9. **Sign_FA16Bits**: A 16-bit signed full adder implemented in VHDL.
 10. **Mux4to1_Process_Case** : A 4-to-1 multiplexer implemented using `Case` statements.
+11. **Decoder2To4_Process_Case** : A priority decoder implemented using a `process & Case` block.
 
 Each example is contained in its own folder with the corresponding VHDL file(s).
 
