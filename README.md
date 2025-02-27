@@ -52,8 +52,8 @@ To use these examples, follow these steps:
 
 2. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/Amin98Hosseini/FPGA-Project.git
+   cd FPGA-Project
 
 3. **Open the Project in Xilinx ISE**:
 - Launch Xilinx ISE and create a new project.
@@ -71,8 +71,8 @@ To use these examples, follow these steps:
 
 2. **Clone the Repository**:
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Amin98Hosseini/FPGA-Project.git
+cd FPGA-Project
 ```
 
 3. **Open the Project in Vivado**:
