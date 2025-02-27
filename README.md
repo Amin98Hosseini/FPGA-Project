@@ -34,6 +34,7 @@ Here is a list of the available examples in this repository:
 7. **MUX4To1_Whenelse**: A 4-to-1 multiplexer implemented using `when-else` statements.
 8. **Priority_Encoder_Process**: A priority encoder implemented using a `process` block.
 9. **Sign_FA16Bits**: A 16-bit signed full adder implemented in VHDL.
+10. **Mux4to1_Process_Case** : A 4-to-1 multiplexer implemented using `Case` statements.
 
 Each example is contained in its own folder with the corresponding VHDL file(s).
 
