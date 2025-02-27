@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Amin/Documents/FPGA_Project/Decoder2To4_Process_Case/tb_Example_05_Process_Decoder2to4_isim_beh.exe" -prj "C:/Users/Amin/Documents/FPGA_Project/Decoder2To4_Process_Case/tb_Example_05_Process_Decoder2to4_beh.prj" "work.tb_Example_05_Process_Decoder2to4" 

@@ -1,0 +1,2 @@
+vhdl isim_temp "Decoder2To4_Process_Case.vhd"
+vhdl isim_temp "Process_Decoder2to4_Case.vhd"

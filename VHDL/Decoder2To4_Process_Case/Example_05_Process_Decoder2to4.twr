@@ -1,0 +1,65 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Example_05_Process_Decoder2to4.twx
+Example_05_Process_Decoder2to4.ncd -o Example_05_Process_Decoder2to4.twr
+Example_05_Process_Decoder2to4.pcf
+
+Design file:              Example_05_Process_Decoder2to4.ncd
+Physical constraint file: Example_05_Process_Decoder2to4.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+En             |Y<0>           |    6.588|
+En             |Y<1>           |    6.676|
+En             |Y<2>           |    6.264|
+En             |Y<3>           |    6.421|
+X<0>           |Y<0>           |    6.675|
+X<0>           |Y<1>           |    6.763|
+X<0>           |Y<2>           |    6.279|
+X<0>           |Y<3>           |    6.436|
+X<1>           |Y<0>           |    7.116|
+X<1>           |Y<1>           |    7.204|
+X<1>           |Y<2>           |    6.964|
+X<1>           |Y<3>           |    7.121|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Feb 27 20:42:21 2025 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 212 MB
+
+
+
