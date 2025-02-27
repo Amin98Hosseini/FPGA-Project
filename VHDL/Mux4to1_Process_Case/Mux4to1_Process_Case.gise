@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Mux4to1_Process_Case.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Mux4to1_Process_Case.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Mux4to1_Process_Case.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Mux4to1_Process_Case.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Mux4to1_Process_Case.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Mux4to1_Process_Case.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Mux4to1_Process_Case.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Mux4to1_Process_Case.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Mux4to1_Process_Case.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Mux4to1_Process_Case.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Mux4to1_Process_Case.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Mux4to1_Process_Case.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Mux4to1_Process_Case.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Mux4to1_Process_Case.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Mux4to1_Process_Case.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Mux4to1_Process_Case.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Mux4to1_Process_Case.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Mux4to1_Process_Case.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Mux4to1_Process_Case.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Mux4to1_Process_Case.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Mux4to1_Process_Case_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Mux4to1_Process_Case_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Mux4to1_Process_Case_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Mux4to1_Process_Case_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Mux4to1_Process_Case_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Mux4to1_Process_Case_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Mux4to1_Process_Case_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Mux4to1_Process_Case_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Mux4to1_Process_Case_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Mux4to1_Process_Case_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Mux4to1_Process_Case_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Mux4to1_Process_Case_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Mux4to1_Process_Case_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Mux4to1_Process_Case_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Mux4to1_Process_Case_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1740674231" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1740674231">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1740674231" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="4345375900831790460" xil_pn:start_ts="1740674231">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1740674231" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-7310381682251872852" xil_pn:start_ts="1740674231">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1740674231" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1740674231">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1740674231" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-501046112983923202" xil_pn:start_ts="1740674231">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1740674231" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1740674231">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1740674231" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-3026784319189122570" xil_pn:start_ts="1740674231">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1740674707" xil_pn:in_ck="-407465521079806101" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7007897040779634939" xil_pn:start_ts="1740674702">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.lso"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.ngc"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.ngr"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.prj"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.stx"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.syr"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.xst"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1740674237" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3797569526674615181" xil_pn:start_ts="1740674237">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1740674711" xil_pn:in_ck="-407465521079814847" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7790664577140142903" xil_pn:start_ts="1740674707">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.bld"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.ngd"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1740674717" xil_pn:in_ck="-407465521079814846" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1740674711">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.pcf"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case_map.map"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case_map.mrp"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case_map.ncd"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case_map.ngm"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case_map.xrpt"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case_summary.xml"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1740674726" xil_pn:in_ck="8989532487105582427" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1740674717">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.ncd"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.pad"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.par"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.ptwx"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.unroutes"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.xpi"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case_pad.csv"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case_pad.txt"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1740674726" xil_pn:in_ck="-407465521079814978" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1740674723">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.twr"/>
+      <outfile xil_pn:name="Mux4to1_Process_Case.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>
