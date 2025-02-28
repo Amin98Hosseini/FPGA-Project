@@ -1,0 +1,2 @@
+vhdl work "BCD_To_Seven_Segment.vhd"
+vhdl work "BCD_To_Seven_Segment_TB.vhd"

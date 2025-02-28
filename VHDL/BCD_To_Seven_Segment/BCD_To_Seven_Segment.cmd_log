@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_To_Seven_Segment/BCD_To_Seven_Segment.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_To_Seven_Segment/BCD_To_Seven_Segment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 BCD_To_Seven_Segment.ngc BCD_To_Seven_Segment.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_To_Seven_Segment_map.ncd BCD_To_Seven_Segment.ngd BCD_To_Seven_Segment.pcf 
+par -w -intstyle ise -ol high -mt off BCD_To_Seven_Segment_map.ncd BCD_To_Seven_Segment.ncd BCD_To_Seven_Segment.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_To_Seven_Segment.twx BCD_To_Seven_Segment.ncd -o BCD_To_Seven_Segment.twr BCD_To_Seven_Segment.pcf 
+bitgen -intstyle ise -f BCD_To_Seven_Segment.ut BCD_To_Seven_Segment.ncd 

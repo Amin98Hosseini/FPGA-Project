@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Amin\Documents\FPGA_Project\BCD_To_Seven_Segment\BCD_To_Seven_Segment.ncd
+OUTFILE=C:\Users\Amin\Documents\FPGA_Project\BCD_To_Seven_Segment\BCD_To_Seven_Segment.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Users\Amin\Documents\FPGA_Project\BCD_To_Seven_Segment
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,81 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Example_06_BCD_to_7_Seg.twx Example_06_BCD_to_7_Seg.ncd -o
+Example_06_BCD_to_7_Seg.twr Example_06_BCD_to_7_Seg.pcf -ucf
+BCD_To_Seven_Segment.ucf
+
+Design file:              Example_06_BCD_to_7_Seg.ncd
+Physical constraint file: Example_06_BCD_to_7_Seg.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+--------------------+---------+
+Source Pad     |Destination Pad     |  Delay  |
+---------------+--------------------+---------+
+BCD_Digit<0>   |Seven_Segment_Int<0>|    7.476|
+BCD_Digit<0>   |Seven_Segment_Int<1>|    7.818|
+BCD_Digit<0>   |Seven_Segment_Int<2>|    7.707|
+BCD_Digit<0>   |Seven_Segment_Int<3>|    7.556|
+BCD_Digit<0>   |Seven_Segment_Int<4>|    6.830|
+BCD_Digit<0>   |Seven_Segment_Int<5>|    6.890|
+BCD_Digit<0>   |Seven_Segment_Int<6>|    6.555|
+BCD_Digit<1>   |Seven_Segment_Int<0>|    8.353|
+BCD_Digit<1>   |Seven_Segment_Int<1>|    8.522|
+BCD_Digit<1>   |Seven_Segment_Int<2>|    8.411|
+BCD_Digit<1>   |Seven_Segment_Int<3>|    8.142|
+BCD_Digit<1>   |Seven_Segment_Int<4>|    7.416|
+BCD_Digit<1>   |Seven_Segment_Int<5>|    7.253|
+BCD_Digit<1>   |Seven_Segment_Int<6>|    6.918|
+BCD_Digit<2>   |Seven_Segment_Int<0>|    8.381|
+BCD_Digit<2>   |Seven_Segment_Int<1>|    8.461|
+BCD_Digit<2>   |Seven_Segment_Int<2>|    8.350|
+BCD_Digit<2>   |Seven_Segment_Int<3>|    8.452|
+BCD_Digit<2>   |Seven_Segment_Int<4>|    7.726|
+BCD_Digit<2>   |Seven_Segment_Int<5>|    7.332|
+BCD_Digit<2>   |Seven_Segment_Int<6>|    6.997|
+BCD_Digit<3>   |Seven_Segment_Int<0>|    9.102|
+BCD_Digit<3>   |Seven_Segment_Int<1>|    9.294|
+BCD_Digit<3>   |Seven_Segment_Int<2>|    9.183|
+BCD_Digit<3>   |Seven_Segment_Int<3>|    9.032|
+BCD_Digit<3>   |Seven_Segment_Int<4>|    8.306|
+BCD_Digit<3>   |Seven_Segment_Int<5>|    8.066|
+BCD_Digit<3>   |Seven_Segment_Int<6>|    7.731|
+---------------+--------------------+---------+
+
+
+Analysis completed Fri Feb 28 11:05:33 2025 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 213 MB
+
+
+

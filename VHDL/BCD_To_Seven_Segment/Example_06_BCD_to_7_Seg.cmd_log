@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_To_Seven_Segment/Example_06_BCD_to_7_Seg.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_To_Seven_Segment/Example_06_BCD_to_7_Seg.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_To_Seven_Segment/Example_06_BCD_to_7_Seg.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_To_Seven_Segment/Example_06_BCD_to_7_Seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_To_Seven_Segment.ucf -p xc6slx9-tqg144-3 Example_06_BCD_to_7_Seg.ngc Example_06_BCD_to_7_Seg.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Example_06_BCD_to_7_Seg_map.ncd Example_06_BCD_to_7_Seg.ngd Example_06_BCD_to_7_Seg.pcf 
+par -w -intstyle ise -ol high -mt off Example_06_BCD_to_7_Seg_map.ncd Example_06_BCD_to_7_Seg.ncd Example_06_BCD_to_7_Seg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Example_06_BCD_to_7_Seg.twx Example_06_BCD_to_7_Seg.ncd -o Example_06_BCD_to_7_Seg.twr Example_06_BCD_to_7_Seg.pcf -ucf BCD_To_Seven_Segment.ucf 
+bitgen -intstyle ise -f Example_06_BCD_to_7_Seg.ut Example_06_BCD_to_7_Seg.ncd 

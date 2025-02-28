@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Fri Feb 28 11:05:36 2025
+
+drc -z Example_06_BCD_to_7_Seg.ncd Example_06_BCD_to_7_Seg.pcf
+
+DRC detected 0 errors and 0 warnings.
