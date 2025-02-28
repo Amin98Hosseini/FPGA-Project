@@ -1,0 +1,94 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml ALU_74381.twx ALU_74381.ncd -o ALU_74381.twr ALU_74381.pcf
+
+Design file:              ALU_74381.ncd
+Physical constraint file: ALU_74381.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |Cout           |    8.470|
+A<0>           |F<0>           |    6.387|
+A<0>           |F<1>           |    7.337|
+A<0>           |F<2>           |    7.354|
+A<0>           |F<3>           |    8.427|
+A<1>           |Cout           |    7.927|
+A<1>           |F<1>           |    6.731|
+A<1>           |F<2>           |    6.811|
+A<1>           |F<3>           |    7.884|
+A<2>           |Cout           |    7.876|
+A<2>           |F<2>           |    6.948|
+A<2>           |F<3>           |    7.833|
+A<3>           |Cout           |    7.325|
+A<3>           |F<3>           |    7.253|
+B<0>           |Cout           |    8.051|
+B<0>           |F<0>           |    6.355|
+B<0>           |F<1>           |    6.584|
+B<0>           |F<2>           |    6.935|
+B<0>           |F<3>           |    8.008|
+B<1>           |Cout           |    8.066|
+B<1>           |F<1>           |    7.340|
+B<1>           |F<2>           |    6.950|
+B<1>           |F<3>           |    8.023|
+B<2>           |Cout           |    7.465|
+B<2>           |F<2>           |    6.380|
+B<2>           |F<3>           |    7.422|
+B<3>           |Cout           |    8.068|
+B<3>           |F<3>           |    7.762|
+S<0>           |Cout           |    8.393|
+S<0>           |F<0>           |    6.180|
+S<0>           |F<1>           |    7.538|
+S<0>           |F<2>           |    7.277|
+S<0>           |F<3>           |    8.350|
+S<1>           |Cout           |    8.403|
+S<1>           |F<0>           |    6.221|
+S<1>           |F<1>           |    7.246|
+S<1>           |F<2>           |    7.287|
+S<1>           |F<3>           |    8.360|
+S<2>           |Cout           |    7.065|
+S<2>           |F<0>           |    6.066|
+S<2>           |F<1>           |    7.156|
+S<2>           |F<2>           |    6.966|
+S<2>           |F<3>           |    7.325|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Feb 28 15:17:48 2025 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 213 MB
+
+
+

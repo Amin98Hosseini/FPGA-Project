@@ -1,0 +1,2 @@
+vhdl isim_temp "ALU_74381_Process.vhd"
+vhdl isim_temp "ALU_74381_Process_TB.vhd"
