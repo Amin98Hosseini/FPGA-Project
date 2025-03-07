@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Amin/Documents/FPGA_Project/Register_nBits_Generic/Register_Generic_TB_isim_beh.exe" -prj "C:/Users/Amin/Documents/FPGA_Project/Register_nBits_Generic/Register_Generic_TB_beh.prj" "work.Register_Generic_TB" 

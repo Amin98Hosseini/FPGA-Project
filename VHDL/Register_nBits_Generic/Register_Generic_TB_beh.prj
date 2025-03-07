@@ -1,0 +1,2 @@
+vhdl work "Register_nBits_Generic.vhd"
+vhdl work "Register_Generic_TB.vhd"
