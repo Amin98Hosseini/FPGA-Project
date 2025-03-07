@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Flip_Flop_Synch_Reset/Flip_Flop_Synch_Reset.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Flip_Flop_Synch_Reset/Flip_Flop_Synch_Reset.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Flip_Flop_Synch_Reset.ngc Flip_Flop_Synch_Reset.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Flip_Flop_Synch_Reset_map.ncd Flip_Flop_Synch_Reset.ngd Flip_Flop_Synch_Reset.pcf 
+par -w -intstyle ise -ol high -mt off Flip_Flop_Synch_Reset_map.ncd Flip_Flop_Synch_Reset.ncd Flip_Flop_Synch_Reset.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Flip_Flop_Synch_Reset.twx Flip_Flop_Synch_Reset.ncd -o Flip_Flop_Synch_Reset.twr Flip_Flop_Synch_Reset.pcf 

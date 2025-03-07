@@ -1,0 +1,2 @@
+vhdl isim_temp "Flip_Flop_ASynch_Reset.vhd"
+vhdl isim_temp "Flip_Flop_ASynch_Reset_TB.vhd"

@@ -1,0 +1,2 @@
+vhdl work "Flip_Flop_ASynch_Reset.vhd"
+vhdl work "Flip_Flop_ASynch_Reset_TB.vhd"
