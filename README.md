@@ -41,6 +41,7 @@ Here is a list of the available examples in this repository:
 14. **Flip_Flop_ASynch_Reset** : A basic Async FlipFlop implementation in VHDL .
 15. **Flip_Flop_Synch_Reset** : A basic Sync FlipFlop implementation in VHDL .
 16. **Register_nBits_Generic** : A basic nBits Register Generic implementation in VHDL .
+17. **Shift_Register** : A basic 8Bits Shift_Register implementation in VHDL .
 
 Each example is contained in its own folder with the corresponding VHDL file(s).
 
