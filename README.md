@@ -38,11 +38,12 @@ Here is a list of the available examples in this repository:
 11. **Decoder2To4_Process_Case** : A priority decoder implemented using a `process & Case` block.
 12. **ALU 74381** : The 74381 is a classic 4-bit Arithmetic Logic Unit (ALU) .
 13. **ALU 74381** : The 74381 is a classic 4-bit Arithmetic Logic Unit (ALU) implemented using a `process & Case` block.
-14. **Flip_Flop_ASynch_Reset** : A basic Async FlipFlop implementation in VHDL .
-15. **Flip_Flop_Synch_Reset** : A basic Sync FlipFlop implementation in VHDL .
-16. **Register_nBits_Generic** : A basic nBits Register Generic implementation in VHDL .
-17. **Shift_Register** : A basic 8Bits Shift_Register implementation in VHDL .
-18. **Shift_Register_For_Loop** : A basic 16Bits Shift_Register With Foor Lopp implementation in VHDL .
+14. **Flip Flop ASynch_Reset** : A basic Async FlipFlop implementation in VHDL .
+15. **Flip Flop Synch_Reset** : A basic Sync FlipFlop implementation in VHDL .
+16. **Register nBits_Generic** : A basic nBits Register Generic implementation in VHDL .
+17. **Shift Register** : A basic 8Bits Shift_Register implementation in VHDL .
+18. **Shift Register For Loop** : A basic 16Bits Shift_Register With Foor Lopp implementation in VHDL .
+19. **Up Down Counter 4Bits** : A basic Up Down Counter 4bits implementation in VHDL .
 
 Each example is contained in its own folder with the corresponding VHDL file(s).
 
