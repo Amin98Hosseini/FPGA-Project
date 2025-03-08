@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Amin/Documents/FPGA_Project/Shift_Register_For_Loop/Shift_Register_For_Loop_TB_isim_beh.exe" -prj "C:/Users/Amin/Documents/FPGA_Project/Shift_Register_For_Loop/Shift_Register_For_Loop_TB_beh.prj" "work.Shift_Register_For_Loop_TB" 

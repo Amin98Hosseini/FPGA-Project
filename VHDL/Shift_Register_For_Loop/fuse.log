@@ -1,0 +1,19 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Amin/Documents/FPGA_Project/Shift_Register_For_Loop/Shift_Register_For_Loop_TB_isim_beh.exe -prj C:/Users/Amin/Documents/FPGA_Project/Shift_Register_For_Loop/Shift_Register_For_Loop_TB_beh.prj work.Shift_Register_For_Loop_TB 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Amin/Documents/FPGA_Project/Shift_Register_For_Loop/Shift_Register_For_Loop.vhd" into library work
+Parsing VHDL file "C:/Users/Amin/Documents/FPGA_Project/Shift_Register_For_Loop/Shift_Register_For_Loop_TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity Shift_Register_For_Loop [\Shift_Register_For_Loop(16)\]
+Compiling architecture behavioral of entity shift_register_for_loop_tb
+Time Resolution for simulation is 1ps.
+Compiled 6 VHDL Units
+Built simulation executable C:/Users/Amin/Documents/FPGA_Project/Shift_Register_For_Loop/Shift_Register_For_Loop_TB_isim_beh.exe
+Fuse Memory Usage: 35492 KB
+Fuse CPU Usage: 343 ms

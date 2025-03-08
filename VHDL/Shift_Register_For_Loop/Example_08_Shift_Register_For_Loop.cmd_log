@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Shift_Register_For_Loop/Example_08_Shift_Register_For_Loop.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Shift_Register_For_Loop/Example_08_Shift_Register_For_Loop.syr" 
