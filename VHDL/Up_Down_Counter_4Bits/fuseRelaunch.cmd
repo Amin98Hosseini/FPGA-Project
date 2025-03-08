@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Amin/Documents/FPGA_Project/Up_Down_Counter_4Bits/Up_Down_Counter_TB_isim_beh.exe" -prj "C:/Users/Amin/Documents/FPGA_Project/Up_Down_Counter_4Bits/Up_Down_Counter_TB_beh.prj" "work.Up_Down_Counter_TB" 
