@@ -105,6 +105,17 @@ Each example is self-contained and can be used as a starting point for your own 
 
 ---
 
+## Support Me
+<a href="https://www.coffeebede.com/amin98hosseini">
+  <img 
+    class="img-fluid" 
+    src="https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg" 
+    width="150" 
+    height="50" 
+    alt="Buy Me a Coffee" 
+  />
+</a>
+
 ## Contributing
 
 Contributions are welcome! If you have additional examples, improvements, or bug fixes, feel free to open a pull request. Please ensure your code follows the same structure and style as the existing examples.
