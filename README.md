@@ -44,6 +44,8 @@ Here is a list of the available examples in this repository:
 17. **Shift Register** : A basic 8Bits Shift_Register implementation in VHDL .
 18. **Shift Register For Loop** : A basic 16Bits Shift_Register With Foor Lopp implementation in VHDL .
 19. **Up Down Counter 4Bits** : A basic Up Down Counter 4bits implementation in VHDL .
+20. **Sequence_Detector** : A basic Sequence Detector implementation in VHDL .
+21. **BCD_Counter_7Segment** : A basic Up Down Counter BCD implementation in VHDL And Display Number On 7Segment .
 
 Each example is contained in its own folder with the corresponding VHDL file(s).
 
