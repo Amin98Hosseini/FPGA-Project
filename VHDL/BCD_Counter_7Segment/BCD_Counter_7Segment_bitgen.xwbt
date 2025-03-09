@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Amin\Documents\FPGA_Project\BCD_Counter_7Segment\BCD_Counter_7Segment.ncd
+OUTFILE=C:\Users\Amin\Documents\FPGA_Project\BCD_Counter_7Segment\BCD_Counter_7Segment.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Users\Amin\Documents\FPGA_Project\BCD_Counter_7Segment
+LICENSE=WebPack
+USER_INFO=__0_0_0

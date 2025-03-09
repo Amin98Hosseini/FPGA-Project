@@ -1,0 +1,2 @@
+vhdl work "Sequence_Detector.vhd"
+vhdl work "Sequence_Detector_TB.vhd"

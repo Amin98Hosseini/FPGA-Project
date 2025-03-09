@@ -1,0 +1,2 @@
+vhdl work "BCD_Counter_7Segment.vhd"
+vhdl work "BCD_Counter_7Segment_TB.vhd"

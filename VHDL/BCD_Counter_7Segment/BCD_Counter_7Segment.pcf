@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Mar 09 20:43:50 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Seven_Segment_Int<0>" LOCATE = SITE "P100" LEVEL 1;
+COMP "Seven_Segment_Int<1>" LOCATE = SITE "P99" LEVEL 1;
+COMP "Seven_Segment_Int<2>" LOCATE = SITE "P98" LEVEL 1;
+COMP "Seven_Segment_Int<3>" LOCATE = SITE "P97" LEVEL 1;
+COMP "Seven_Segment_Int<4>" LOCATE = SITE "P95" LEVEL 1;
+COMP "Seven_Segment_Int<5>" LOCATE = SITE "P94" LEVEL 1;
+COMP "Seven_Segment_Int<6>" LOCATE = SITE "P93" LEVEL 1;
+COMP "Seven_Segment_Int<7>" LOCATE = SITE "P92" LEVEL 1;
+COMP "Clock" LOCATE = SITE "P85" LEVEL 1;
+COMP "Up_Down" LOCATE = SITE "P79" LEVEL 1;
+COMP "Reset" LOCATE = SITE "P74" LEVEL 1;
+SCHEMATIC END;
+

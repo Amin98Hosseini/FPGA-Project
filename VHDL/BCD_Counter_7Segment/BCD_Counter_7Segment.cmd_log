@@ -1,0 +1,74 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 BCD_Counter_7Segment.ngc BCD_Counter_7Segment.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ngd BCD_Counter_7Segment.pcf 
+par -w -intstyle ise -ol high -mt off BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ncd BCD_Counter_7Segment.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_Counter_7Segment.twx BCD_Counter_7Segment.ncd -o BCD_Counter_7Segment.twr BCD_Counter_7Segment.pcf 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_Counter_7Segment.ucf -p xc6slx9-tqg144-3 BCD_Counter_7Segment.ngc BCD_Counter_7Segment.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ngd BCD_Counter_7Segment.pcf 
+par -w -intstyle ise -ol high -mt off BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ncd BCD_Counter_7Segment.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_Counter_7Segment.twx BCD_Counter_7Segment.ncd -o BCD_Counter_7Segment.twr BCD_Counter_7Segment.pcf -ucf BCD_Counter_7Segment.ucf 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_Counter_7Segment.ucf -p xc6slx9-tqg144-3 BCD_Counter_7Segment.ngc BCD_Counter_7Segment.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ngd BCD_Counter_7Segment.pcf 
+par -w -intstyle ise -ol high -mt off BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ncd BCD_Counter_7Segment.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_Counter_7Segment.twx BCD_Counter_7Segment.ncd -o BCD_Counter_7Segment.twr BCD_Counter_7Segment.pcf -ucf BCD_Counter_7Segment.ucf 
+bitgen -intstyle ise -f BCD_Counter_7Segment.ut BCD_Counter_7Segment.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_Counter_7Segment.ucf -p xc6slx9-tqg144-3 BCD_Counter_7Segment.ngc BCD_Counter_7Segment.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ngd BCD_Counter_7Segment.pcf 
+par -w -intstyle ise -ol high -mt off BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ncd BCD_Counter_7Segment.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_Counter_7Segment.twx BCD_Counter_7Segment.ncd -o BCD_Counter_7Segment.twr BCD_Counter_7Segment.pcf -ucf BCD_Counter_7Segment.ucf 
+bitgen -intstyle ise -f BCD_Counter_7Segment.ut BCD_Counter_7Segment.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_Counter_7Segment.ucf -p xc6slx9-tqg144-3 BCD_Counter_7Segment.ngc BCD_Counter_7Segment.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ngd BCD_Counter_7Segment.pcf 
+par -w -intstyle ise -ol high -mt off BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ncd BCD_Counter_7Segment.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_Counter_7Segment.twx BCD_Counter_7Segment.ncd -o BCD_Counter_7Segment.twr BCD_Counter_7Segment.pcf -ucf BCD_Counter_7Segment.ucf 
+bitgen -intstyle ise -f BCD_Counter_7Segment.ut BCD_Counter_7Segment.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_Counter_7Segment.ucf -p xc6slx9-tqg144-3 BCD_Counter_7Segment.ngc BCD_Counter_7Segment.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ngd BCD_Counter_7Segment.pcf 
+par -w -intstyle ise -ol high -mt off BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ncd BCD_Counter_7Segment.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_Counter_7Segment.twx BCD_Counter_7Segment.ncd -o BCD_Counter_7Segment.twr BCD_Counter_7Segment.pcf -ucf BCD_Counter_7Segment.ucf 
+bitgen -intstyle ise -f BCD_Counter_7Segment.ut BCD_Counter_7Segment.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_Counter_7Segment.ucf -p xc6slx9-tqg144-3 BCD_Counter_7Segment.ngc BCD_Counter_7Segment.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ngd BCD_Counter_7Segment.pcf 
+par -w -intstyle ise -ol high -mt off BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ncd BCD_Counter_7Segment.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_Counter_7Segment.twx BCD_Counter_7Segment.ncd -o BCD_Counter_7Segment.twr BCD_Counter_7Segment.pcf -ucf BCD_Counter_7Segment.ucf 
+bitgen -intstyle ise -f BCD_Counter_7Segment.ut BCD_Counter_7Segment.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_Counter_7Segment.ucf -p xc6slx9-tqg144-3 BCD_Counter_7Segment.ngc BCD_Counter_7Segment.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ngd BCD_Counter_7Segment.pcf 
+par -w -intstyle ise -ol high -mt off BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ncd BCD_Counter_7Segment.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_Counter_7Segment.twx BCD_Counter_7Segment.ncd -o BCD_Counter_7Segment.twr BCD_Counter_7Segment.pcf -ucf BCD_Counter_7Segment.ucf 
+bitgen -intstyle ise -f BCD_Counter_7Segment.ut BCD_Counter_7Segment.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_Counter_7Segment.ucf -p xc6slx9-tqg144-3 BCD_Counter_7Segment.ngc BCD_Counter_7Segment.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ngd BCD_Counter_7Segment.pcf 
+par -w -intstyle ise -ol high -mt off BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ncd BCD_Counter_7Segment.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_Counter_7Segment.twx BCD_Counter_7Segment.ncd -o BCD_Counter_7Segment.twr BCD_Counter_7Segment.pcf -ucf BCD_Counter_7Segment.ucf 
+bitgen -intstyle ise -f BCD_Counter_7Segment.ut BCD_Counter_7Segment.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_Counter_7Segment.ucf -p xc6slx9-tqg144-3 BCD_Counter_7Segment.ngc BCD_Counter_7Segment.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ngd BCD_Counter_7Segment.pcf 
+par -w -intstyle ise -ol high -mt off BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ncd BCD_Counter_7Segment.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_Counter_7Segment.twx BCD_Counter_7Segment.ncd -o BCD_Counter_7Segment.twr BCD_Counter_7Segment.pcf -ucf BCD_Counter_7Segment.ucf 
+bitgen -intstyle ise -f BCD_Counter_7Segment.ut BCD_Counter_7Segment.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_Counter_7Segment.ucf -p xc6slx9-tqg144-3 BCD_Counter_7Segment.ngc BCD_Counter_7Segment.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ngd BCD_Counter_7Segment.pcf 
+par -w -intstyle ise -ol high -mt off BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ncd BCD_Counter_7Segment.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_Counter_7Segment.twx BCD_Counter_7Segment.ncd -o BCD_Counter_7Segment.twr BCD_Counter_7Segment.pcf -ucf BCD_Counter_7Segment.ucf 
+bitgen -intstyle ise -f BCD_Counter_7Segment.ut BCD_Counter_7Segment.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_Counter_7Segment.ucf -p xc6slx9-tqg144-3 BCD_Counter_7Segment.ngc BCD_Counter_7Segment.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ngd BCD_Counter_7Segment.pcf 
+par -w -intstyle ise -ol high -mt off BCD_Counter_7Segment_map.ncd BCD_Counter_7Segment.ncd BCD_Counter_7Segment.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_Counter_7Segment.twx BCD_Counter_7Segment.ncd -o BCD_Counter_7Segment.twr BCD_Counter_7Segment.pcf -ucf BCD_Counter_7Segment.ucf 
+bitgen -intstyle ise -f BCD_Counter_7Segment.ut BCD_Counter_7Segment.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment.syr" 

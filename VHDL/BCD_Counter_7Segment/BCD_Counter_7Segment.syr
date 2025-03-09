@@ -1,0 +1,425 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: BCD_Counter_7Segment.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "BCD_Counter_7Segment.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "BCD_Counter_7Segment"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : BCD_Counter_7Segment
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Amin\Documents\FPGA_Project\BCD_Counter_7Segment\BCD_Counter_7Segment.vhd" into library work
+Parsing entity <BCD_Counter_7Segment>.
+Parsing architecture <Behavioral> of entity <bcd_counter_7segment>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <BCD_Counter_7Segment> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <BCD_Counter_7Segment>.
+    Related source file is "C:\Users\Amin\Documents\FPGA_Project\BCD_Counter_7Segment\BCD_Counter_7Segment.vhd".
+    Found 4-bit register for signal <Counter_BCD_Int>.
+    Found 8-bit register for signal <Seven_Segment_Int>.
+    Found 32-bit register for signal <Counter_Out_Int>.
+    Found 32-bit adder for signal <Counter_Out_Int[31]_GND_4_o_add_1_OUT> created at line 1241.
+    Found 4-bit adder for signal <Counter_BCD_Int[3]_GND_4_o_add_3_OUT> created at line 1241.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_5_OUT<3:0>> created at line 1308.
+    Found 16x8-bit Read Only RAM for signal <Counter_BCD_Int[3]_GND_4_o_wide_mux_10_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  44 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <BCD_Counter_7Segment> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 4-bit addsub                                          : 1
+# Registers                                            : 3
+ 32-bit register                                       : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 1
+# Multiplexers                                         : 1
+ 32-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <BCD_Counter_7Segment>.
+The following registers are absorbed into counter <Counter_Out_Int>: 1 register on signal <Counter_Out_Int>.
+The following registers are absorbed into counter <Counter_BCD_Int>: 1 register on signal <Counter_BCD_Int>.
+INFO:Xst:3231 - The small RAM <Mram_Counter_BCD_Int[3]_GND_4_o_wide_mux_10_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Counter_Out>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <BCD_Counter_7Segment> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port distributed Read Only RAM        : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 4-bit updown counter                                  : 1
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <Seven_Segment_Int_7> (without init value) has a constant value of 0 in block <BCD_Counter_7Segment>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <BCD_Counter_7Segment> ...
+WARNING:Xst:1293 - FF/Latch <Counter_Out_Int_16> has a constant value of 0 in block <BCD_Counter_7Segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Counter_Out_Int_17> has a constant value of 0 in block <BCD_Counter_7Segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Counter_Out_Int_18> has a constant value of 0 in block <BCD_Counter_7Segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Counter_Out_Int_19> has a constant value of 0 in block <BCD_Counter_7Segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Counter_Out_Int_20> has a constant value of 0 in block <BCD_Counter_7Segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Counter_Out_Int_21> has a constant value of 0 in block <BCD_Counter_7Segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Counter_Out_Int_22> has a constant value of 0 in block <BCD_Counter_7Segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Counter_Out_Int_23> has a constant value of 0 in block <BCD_Counter_7Segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Counter_Out_Int_24> has a constant value of 0 in block <BCD_Counter_7Segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Counter_Out_Int_25> has a constant value of 0 in block <BCD_Counter_7Segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Counter_Out_Int_26> has a constant value of 0 in block <BCD_Counter_7Segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Counter_Out_Int_27> has a constant value of 0 in block <BCD_Counter_7Segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Counter_Out_Int_28> has a constant value of 0 in block <BCD_Counter_7Segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Counter_Out_Int_29> has a constant value of 0 in block <BCD_Counter_7Segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Counter_Out_Int_30> has a constant value of 0 in block <BCD_Counter_7Segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Counter_Out_Int_31> has a constant value of 0 in block <BCD_Counter_7Segment>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BCD_Counter_7Segment, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 27
+ Flip-Flops                                            : 27
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : BCD_Counter_7Segment.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 82
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 15
+#      LUT2                        : 17
+#      LUT3                        : 1
+#      LUT4                        : 8
+#      LUT5                        : 1
+#      LUT6                        : 5
+#      MUXCY                       : 15
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 27
+#      FD                          : 23
+#      FDRE                        : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 2
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              27  out of  11440     0%  
+ Number of Slice LUTs:                   49  out of   5720     0%  
+    Number used as Logic:                49  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     49
+   Number with an unused Flip Flop:      22  out of     49    44%  
+   Number with an unused LUT:             0  out of     49     0%  
+   Number of fully used LUT-FF pairs:    27  out of     49    55%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    102    14%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clock                              | BUFGP                  | 27    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.878ns (Maximum Frequency: 257.838MHz)
+   Minimum input arrival time before clock: 3.823ns
+   Maximum output required time after clock: 3.926ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock'
+  Clock period: 3.878ns (frequency: 257.838MHz)
+  Total number of paths / destination ports: 494 / 31
+-------------------------------------------------------------------------
+Delay:               3.878ns (Levels of Logic = 3)
+  Source:            Counter_Out_Int_11 (FF)
+  Destination:       Counter_Out_Int_1 (FF)
+  Source Clock:      Clock rising
+  Destination Clock: Clock rising
+
+  Data Path: Counter_Out_Int_11 to Counter_Out_Int_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.981  Counter_Out_Int_11 (Counter_Out_Int_11)
+     LUT6:I0->O            3   0.203   0.755  Counter_Out_Int[31]_GND_4_o_equal_3_o<31>1 (Counter_Out_Int[31]_GND_4_o_equal_3_o<31>)
+     LUT6:I4->O           15   0.203   0.982  Counter_Out_Int[31]_GND_4_o_equal_3_o_01 (Counter_Out_Int[31]_GND_4_o_equal_3_o_0)
+     LUT2:I1->O            1   0.205   0.000  Counter_Out_Int_1_rstpot (Counter_Out_Int_1_rstpot)
+     FD:D                      0.102          Counter_Out_Int_1
+    ----------------------------------------
+    Total                      3.878ns (1.160ns logic, 2.718ns route)
+                                       (29.9% logic, 70.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clock'
+  Total number of paths / destination ports: 23 / 23
+-------------------------------------------------------------------------
+Offset:              3.823ns (Levels of Logic = 3)
+  Source:            Reset (PAD)
+  Destination:       Counter_Out_Int_1 (FF)
+  Destination Clock: Clock rising
+
+  Data Path: Reset to Counter_Out_Int_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.222   1.109  Reset_IBUF (Reset_IBUF)
+     LUT6:I0->O           15   0.203   0.982  Counter_Out_Int[31]_GND_4_o_equal_3_o_01 (Counter_Out_Int[31]_GND_4_o_equal_3_o_0)
+     LUT2:I1->O            1   0.205   0.000  Counter_Out_Int_1_rstpot (Counter_Out_Int_1_rstpot)
+     FD:D                      0.102          Counter_Out_Int_1
+    ----------------------------------------
+    Total                      3.823ns (1.732ns logic, 2.091ns route)
+                                       (45.3% logic, 54.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              3.926ns (Levels of Logic = 1)
+  Source:            Counter_BCD_Int_0 (FF)
+  Destination:       Counter_Out<0> (PAD)
+  Source Clock:      Clock rising
+
+  Data Path: Counter_BCD_Int_0 to Counter_Out<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            12   0.447   0.908  Counter_BCD_Int_0 (Counter_BCD_Int_0)
+     OBUF:I->O                 2.571          Counter_Out_0_OBUF (Counter_Out<0>)
+    ----------------------------------------
+    Total                      3.926ns (3.018ns logic, 0.908ns route)
+                                       (76.9% logic, 23.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |    3.878|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.56 secs
+ 
+--> 
+
+Total memory usage is 260384 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

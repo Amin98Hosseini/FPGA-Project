@@ -1,0 +1,2 @@
+vhdl isim_temp "BCD_Counter_7Segment.vhd"
+vhdl isim_temp "BCD_Counter_7Segment_TB.vhd"

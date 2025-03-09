@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment_TB_isim_beh.exe" -prj "C:/Users/Amin/Documents/FPGA_Project/BCD_Counter_7Segment/BCD_Counter_7Segment_TB_beh.prj" "work.BCD_Counter_7Segment_TB" 
