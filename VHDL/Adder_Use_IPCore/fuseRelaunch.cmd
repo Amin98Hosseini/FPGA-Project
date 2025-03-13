@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Amin/Documents/FPGA_Project/Adder_Use_IPCore/Adder_Use_IPCore_TB_isim_beh.exe" -prj "C:/Users/Amin/Documents/FPGA_Project/Adder_Use_IPCore/Adder_Use_IPCore_TB_beh.prj" "work.Adder_Use_IPCore_TB" 

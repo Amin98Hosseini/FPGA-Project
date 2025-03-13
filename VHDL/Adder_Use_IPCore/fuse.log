@@ -1,0 +1,32 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Amin/Documents/FPGA_Project/Adder_Use_IPCore/Adder_Use_IPCore_TB_isim_beh.exe -prj C:/Users/Amin/Documents/FPGA_Project/Adder_Use_IPCore/Adder_Use_IPCore_TB_beh.prj work.Adder_Use_IPCore_TB 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Amin/Documents/FPGA_Project/Adder_Use_IPCore/ipcore_dir/Adder_IPCore.vhd" into library work
+Parsing VHDL file "C:/Users/Amin/Documents/FPGA_Project/Adder_Use_IPCore/Adder_Use_IPCore.vhd" into library work
+Parsing VHDL file "C:/Users/Amin/Documents/FPGA_Project/Adder_Use_IPCore/Adder_Use_IPCore_TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package xbip_addsub_v2_0_comp
+Compiling package textio
+Compiling package bip_utils_pkg_v2_0
+Compiling package bip_usecase_utils_pkg_v2_0
+Compiling package c_addsub_pkg_v11_0
+Compiling package xbip_pipe_v2_0_xst_comp
+Compiling package c_reg_fd_v11_0_comp
+Compiling architecture behavioral of entity c_reg_fd_v11_0 [\c_reg_fd_v11_0(17,"0","0",1,0,0...]
+Compiling architecture behavioral of entity c_addsub_v11_0_legacy [\c_addsub_v11_0_legacy(16,16,17,...]
+Compiling architecture behavioral of entity c_addsub_v11_0 [\c_addsub_v11_0(0,"spartan6",0,1...]
+Compiling architecture adder_ipcore_a of entity Adder_IPCore [adder_ipcore_default]
+Compiling architecture behavioral of entity Adder_Use_IPCore [adder_use_ipcore_default]
+Compiling architecture behavioral of entity adder_use_ipcore_tb
+Time Resolution for simulation is 1ps.
+Waiting for 6 sub-compilation(s) to finish...
+Compiled 21 VHDL Units
+Built simulation executable C:/Users/Amin/Documents/FPGA_Project/Adder_Use_IPCore/Adder_Use_IPCore_TB_isim_beh.exe
+Fuse Memory Usage: 40376 KB
+Fuse CPU Usage: 483 ms

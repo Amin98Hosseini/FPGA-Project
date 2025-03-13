@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Amin/Documents/FPGA_Project/Adder_Use_IPCore/Adder_Use_IPCore_TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="adder_use_ipcore_tb" />
+            <top_module name="bip_usecase_utils_pkg_v2_0" />
+            <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="c_addsub_pkg_v11_0" />
+            <top_module name="c_reg_fd_v11_0_comp" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="textio" />
+            <top_module name="xbip_addsub_v2_0_comp" />
+            <top_module name="xbip_pipe_v2_0_xst_comp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/adder_use_ipcore_tb/a_top" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a_top[15:0]</obj_property>
+      <obj_property name="ObjectShortName">a_top[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adder_use_ipcore_tb/b_top" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b_top[15:0]</obj_property>
+      <obj_property name="ObjectShortName">b_top[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adder_use_ipcore_tb/add_top" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">add_top</obj_property>
+      <obj_property name="ObjectShortName">add_top</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adder_use_ipcore_tb/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adder_use_ipcore_tb/sum_top" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sum_top[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_top[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adder_use_ipcore_tb/clock_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+</wave_config>

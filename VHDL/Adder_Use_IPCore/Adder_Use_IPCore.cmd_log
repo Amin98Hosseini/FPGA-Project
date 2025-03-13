@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Adder_Use_IPCore/Adder_Use_IPCore.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Adder_Use_IPCore/Adder_Use_IPCore.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Adder_Use_IPCore/Adder_Use_IPCore.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Adder_Use_IPCore/Adder_Use_IPCore.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Adder_Use_IPCore/Adder_Use_IPCore.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Adder_Use_IPCore/Adder_Use_IPCore.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 Adder_Use_IPCore.ngc Adder_Use_IPCore.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Adder_Use_IPCore_map.ncd Adder_Use_IPCore.ngd Adder_Use_IPCore.pcf 
+par -w -intstyle ise -ol high -mt off Adder_Use_IPCore_map.ncd Adder_Use_IPCore.ncd Adder_Use_IPCore.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Adder_Use_IPCore.twx Adder_Use_IPCore.ncd -o Adder_Use_IPCore.twr Adder_Use_IPCore.pcf 
