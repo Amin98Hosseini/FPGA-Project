@@ -1,0 +1,2 @@
+vhdl work "FFT_4Point.vhd"
+vhdl work "fft_4point_tb.vhd"

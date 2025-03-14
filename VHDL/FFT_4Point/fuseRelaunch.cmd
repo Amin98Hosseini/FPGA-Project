@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Amin/Documents/FPGA_Project/FFT_4Point/TB_FFT_4POINT_isim_beh.exe" -prj "C:/Users/Amin/Documents/FPGA_Project/FFT_4Point/TB_FFT_4POINT_beh.prj" "work.TB_FFT_4POINT" 

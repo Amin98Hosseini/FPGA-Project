@@ -1,0 +1,2 @@
+vhdl isim_temp "FFT_4Point.vhd"
+vhdl isim_temp "fft_4point_tb.vhd"

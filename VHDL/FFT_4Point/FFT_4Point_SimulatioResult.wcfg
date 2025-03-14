@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Amin/Documents/FPGA_Project/FFT_4Point/TB_FFT_4POINT_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_fft_4point" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/tb_fft_4point/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/x0_real" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x0_real[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x0_real[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/x0_imag" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x0_imag[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x0_imag[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/x1_real" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x1_real[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x1_real[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/x1_imag" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x1_imag[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x1_imag[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/x2_real" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x2_real[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x2_real[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/x2_imag" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x2_imag[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x2_imag[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/x3_real" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x3_real[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x3_real[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/x3_imag" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x3_imag[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x3_imag[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/y0_real" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y0_real[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y0_real[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/y0_imag" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y0_imag[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y0_imag[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/y1_real" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y1_real[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y1_real[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/y1_imag" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y1_imag[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y1_imag[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/y2_real" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y2_real[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y2_real[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/y2_imag" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y2_imag[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y2_imag[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/y3_real" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y3_real[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y3_real[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/y3_imag" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y3_imag[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y3_imag[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_4point/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

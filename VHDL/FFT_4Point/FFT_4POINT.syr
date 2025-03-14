@@ -1,0 +1,422 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: FFT_4POINT.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FFT_4POINT.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FFT_4POINT"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : FFT_4POINT
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Amin\Documents\FPGA_Project\FFT_4Point\FFT_4Point.vhd" into library work
+Parsing entity <FFT_4POINT>.
+Parsing architecture <BEHAVIORAL> of entity <fft_4point>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <FFT_4POINT> (architecture <BEHAVIORAL>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <FFT_4POINT>.
+    Related source file is "C:\Users\Amin\Documents\FPGA_Project\FFT_4Point\FFT_4Point.vhd".
+    Found 16-bit register for signal <STAGE1_0_IMAG>.
+    Found 16-bit register for signal <STAGE1_1_REAL>.
+    Found 16-bit register for signal <STAGE1_1_IMAG>.
+    Found 16-bit register for signal <STAGE1_2_REAL>.
+    Found 16-bit register for signal <STAGE1_2_IMAG>.
+    Found 16-bit register for signal <STAGE1_3_REAL>.
+    Found 16-bit register for signal <STAGE1_3_IMAG>.
+    Found 16-bit register for signal <STAGE2_0_REAL>.
+    Found 16-bit register for signal <STAGE2_0_IMAG>.
+    Found 16-bit register for signal <STAGE2_1_REAL>.
+    Found 16-bit register for signal <STAGE2_1_IMAG>.
+    Found 16-bit register for signal <STAGE2_2_REAL>.
+    Found 16-bit register for signal <STAGE2_2_IMAG>.
+    Found 16-bit register for signal <STAGE2_3_REAL>.
+    Found 16-bit register for signal <STAGE2_3_IMAG>.
+    Found 16-bit register for signal <Y0_REAL>.
+    Found 16-bit register for signal <Y0_IMAG>.
+    Found 16-bit register for signal <Y1_REAL>.
+    Found 16-bit register for signal <Y1_IMAG>.
+    Found 16-bit register for signal <Y2_REAL>.
+    Found 16-bit register for signal <Y2_IMAG>.
+    Found 16-bit register for signal <Y3_REAL>.
+    Found 16-bit register for signal <Y3_IMAG>.
+    Found 16-bit register for signal <STAGE1_0_REAL>.
+    Found 16-bit adder for signal <X0_REAL[15]_X2_REAL[15]_add_0_OUT> created at line 81.
+    Found 16-bit adder for signal <X0_IMAG[15]_X2_IMAG[15]_add_1_OUT> created at line 82.
+    Found 16-bit adder for signal <X1_REAL[15]_X3_REAL[15]_add_4_OUT> created at line 85.
+    Found 16-bit adder for signal <X1_IMAG[15]_X3_IMAG[15]_add_5_OUT> created at line 86.
+    Found 16-bit adder for signal <STAGE1_0_REAL[15]_STAGE1_2_REAL[15]_add_8_OUT> created at line 91.
+    Found 16-bit adder for signal <STAGE1_0_IMAG[15]_STAGE1_2_IMAG[15]_add_9_OUT> created at line 92.
+    Found 16-bit adder for signal <STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT> created at line 93.
+    Found 16-bit adder for signal <STAGE1_1_IMAG[15]_STAGE1_3_REAL[15]_add_15_OUT> created at line 98.
+    Found 16-bit subtractor for signal <X0_REAL[15]_X2_REAL[15]_sub_3_OUT<15:0>> created at line 83.
+    Found 16-bit subtractor for signal <X0_IMAG[15]_X2_IMAG[15]_sub_4_OUT<15:0>> created at line 84.
+    Found 16-bit subtractor for signal <X1_REAL[15]_X3_REAL[15]_sub_7_OUT<15:0>> created at line 87.
+    Found 16-bit subtractor for signal <X1_IMAG[15]_X3_IMAG[15]_sub_8_OUT<15:0>> created at line 88.
+    Found 16-bit subtractor for signal <STAGE1_1_IMAG[15]_STAGE1_3_REAL[15]_sub_12_OUT<15:0>> created at line 94.
+    Found 16-bit subtractor for signal <STAGE1_0_REAL[15]_STAGE1_2_REAL[15]_sub_13_OUT<15:0>> created at line 95.
+    Found 16-bit subtractor for signal <STAGE1_0_IMAG[15]_STAGE1_2_IMAG[15]_sub_14_OUT<15:0>> created at line 96.
+    Found 16-bit subtractor for signal <STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_sub_15_OUT<15:0>> created at line 97.
+    Summary:
+	inferred  16 Adder/Subtractor(s).
+	inferred 384 D-type flip-flop(s).
+Unit <FFT_4POINT> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 16
+ 16-bit adder                                          : 8
+ 16-bit subtractor                                     : 8
+# Registers                                            : 24
+ 16-bit register                                       : 24
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 16
+ 16-bit adder                                          : 8
+ 16-bit subtractor                                     : 8
+# Registers                                            : 384
+ Flip-Flops                                            : 384
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <FFT_4POINT> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FFT_4POINT, actual ratio is 10.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 384
+ Flip-Flops                                            : 384
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : FFT_4POINT.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 754
+#      GND                         : 1
+#      LUT2                        : 256
+#      MUXCY                       : 240
+#      VCC                         : 1
+#      XORCY                       : 256
+# FlipFlops/Latches                : 384
+#      FDC                         : 384
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 257
+#      IBUF                        : 129
+#      OBUF                        : 128
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             384  out of  11440     3%  
+ Number of Slice LUTs:                  256  out of   5720     4%  
+    Number used as Logic:               256  out of   5720     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    512
+   Number with an unused Flip Flop:     128  out of    512    25%  
+   Number with an unused LUT:           256  out of    512    50%  
+   Number of fully used LUT-FF pairs:   128  out of    512    25%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                         258
+ Number of bonded IOBs:                 258  out of    102   252% (*) 
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 384   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.091ns (Maximum Frequency: 478.183MHz)
+   Minimum input arrival time before clock: 3.730ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 2.091ns (frequency: 478.183MHz)
+  Total number of paths / destination ports: 3264 / 256
+-------------------------------------------------------------------------
+Delay:               2.091ns (Levels of Logic = 17)
+  Source:            STAGE1_1_REAL_0 (FF)
+  Destination:       STAGE2_1_REAL_15 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: STAGE1_1_REAL_0 to STAGE2_1_REAL_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.721  STAGE1_1_REAL_0 (STAGE1_1_REAL_0)
+     LUT2:I0->O            1   0.203   0.000  Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_lut<0> (Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<0> (Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<1> (Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<2> (Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<3> (Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<4> (Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<5> (Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<6> (Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<7> (Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<8> (Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<9> (Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<10> (Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<11> (Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<12> (Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<13> (Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<13>)
+     MUXCY:CI->O           0   0.019   0.000  Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<14> (Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_cy<14>)
+     XORCY:CI->O           1   0.180   0.000  Madd_STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT_xor<15> (STAGE1_1_REAL[15]_STAGE1_3_IMAG[15]_add_10_OUT<15>)
+     FDC:D                     0.102          STAGE2_1_REAL_15
+    ----------------------------------------
+    Total                      2.091ns (1.370ns logic, 0.721ns route)
+                                       (65.5% logic, 34.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 3520 / 512
+-------------------------------------------------------------------------
+Offset:              3.730ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       STAGE1_0_IMAG_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RESET to STAGE1_0_IMAG_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           384   1.222   2.078  RESET_IBUF (RESET_IBUF)
+     FDC:CLR                   0.430          STAGE1_0_IMAG_0
+    ----------------------------------------
+    Total                      3.730ns (1.652ns logic, 2.078ns route)
+                                       (44.3% logic, 55.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 128 / 128
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            Y0_REAL_15 (FF)
+  Destination:       Y0_REAL<15> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: Y0_REAL_15 to Y0_REAL<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.447   0.579  Y0_REAL_15 (Y0_REAL_15)
+     OBUF:I->O                 2.571          Y0_REAL_15_OBUF (Y0_REAL<15>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    2.091|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.45 secs
+ 
+--> 
+
+Total memory usage is 262688 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
