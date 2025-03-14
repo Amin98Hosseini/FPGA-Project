@@ -1,0 +1,40 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc
+DCMIPCore_SegmentCounter.ucf -p xc6slx9-tqg144-3
+DCM_IPCore_Test_Segment_Counter.ngc DCM_IPCore_Test_Segment_Counter.ngd
+
+Reading NGO file
+"C:/Users/Amin/Documents/FPGA_Project/DCM_IPCore_Test_Segment_Counter/DCM_IPCore
+_Test_Segment_Counter.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "DCMIPCore_SegmentCounter.ucf"
+...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 163720 kilobytes
+
+Writing NGD file "DCM_IPCore_Test_Segment_Counter.ngd" ...
+Total REAL time to NGDBUILD completion:  1 sec
+Total CPU time to NGDBUILD completion:   1 sec
+
+Writing NGDBUILD log file "DCM_IPCore_Test_Segment_Counter.bld"...

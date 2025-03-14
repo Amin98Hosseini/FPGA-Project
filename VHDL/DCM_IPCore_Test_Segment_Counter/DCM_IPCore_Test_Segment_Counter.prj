@@ -1,0 +1,2 @@
+vhdl work "ipcore_dir/DCM_50TO120MHZ.vhd"
+vhdl work "DCM_IPCore_Test_Segment_Counter.vhd"
