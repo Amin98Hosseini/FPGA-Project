@@ -48,7 +48,8 @@ Here is a list of the available examples in this repository:
 21. **BCD Counter 7Segment** : A basic Up Down Counter BCD implementation in VHDL And Display Number On 7Segment .
 22. **Adder Use IPCore** : A basic Adder Use IPCore implementation in VHDL .
 23. **DCM IPCore Test Segment Counter** : A basic Implementation DCM IPCore Test Segment Counter , Convert 50MHz Clock To 120MHz In VHDL .
-24. **FFT_4Point** : A basic Implementation FFT Module 4Point In VHDL .
+24. **FFT 4Point** : A basic Implementation FFT Module 4Point In VHDL .
+25. **Segment Counter Button** :Implementation Segment Counter With Out Debunce Button With Vhdl
 
 Each example is contained in its own folder with the corresponding VHDL file(s).
 
