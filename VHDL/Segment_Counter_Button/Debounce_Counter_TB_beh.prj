@@ -1,0 +1,2 @@
+vhdl work "Segment_Counter_Button.vhd"
+vhdl work "Debounce_BCD_Counter_Tb.vhd"

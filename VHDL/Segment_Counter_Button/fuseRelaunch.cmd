@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter_TB_isim_beh.exe" -prj "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter_TB_beh.prj" "work.Debounce_Counter_TB" 

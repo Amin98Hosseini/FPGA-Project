@@ -1,0 +1,2 @@
+vhdl isim_temp "Segment_Counter_Button.vhd"
+vhdl isim_temp "Debounce_BCD_Counter_Tb.vhd"

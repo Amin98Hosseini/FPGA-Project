@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Segment_Counter_Button.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Segment_Counter_Button.syr" 

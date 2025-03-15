@@ -1,0 +1,22 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Debounce_Counter.ngc Debounce_Counter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Debounce_Counter_map.ncd Debounce_Counter.ngd Debounce_Counter.pcf 
+par -w -intstyle ise -ol high -mt off Debounce_Counter_map.ncd Debounce_Counter.ncd Debounce_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Debounce_Counter.twx Debounce_Counter.ncd -o Debounce_Counter.twr Debounce_Counter.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Debounce_Counter.ngc Debounce_Counter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Debounce_Counter_map.ncd Debounce_Counter.ngd Debounce_Counter.pcf 
+par -w -intstyle ise -ol high -mt off Debounce_Counter_map.ncd Debounce_Counter.ncd Debounce_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Debounce_Counter.twx Debounce_Counter.ncd -o Debounce_Counter.twr Debounce_Counter.pcf 
+bitgen -intstyle ise -f Debounce_Counter.ut Debounce_Counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Segment_Counter_Button/Debounce_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Debounce_Counter.ucf -p xc6slx9-tqg144-3 Debounce_Counter.ngc Debounce_Counter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Debounce_Counter_map.ncd Debounce_Counter.ngd Debounce_Counter.pcf 
+par -w -intstyle ise -ol high -mt off Debounce_Counter_map.ncd Debounce_Counter.ncd Debounce_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Debounce_Counter.twx Debounce_Counter.ncd -o Debounce_Counter.twr Debounce_Counter.pcf -ucf Debounce_Counter.ucf 
+bitgen -intstyle ise -f Debounce_Counter.ut Debounce_Counter.ncd 
