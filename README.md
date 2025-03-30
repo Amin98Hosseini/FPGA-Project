@@ -50,6 +50,7 @@ Here is a list of the available examples in this repository:
 23. **DCM IPCore Test Segment Counter** : A basic Implementation DCM IPCore Test Segment Counter , Convert 50MHz Clock To 120MHz In VHDL .
 24. **FFT 4Point** : A basic Implementation FFT Module 4Point In VHDL .
 25. **Segment Counter Button** :Implementation Segment Counter With Out Debunce Button With Vhdl
+26. **Sample Pipline** :Implementation Simple pipline With Vhdl
 
 Each example is contained in its own folder with the corresponding VHDL file(s).
 
