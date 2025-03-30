@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/Sample_Pipline/Sample_PipeLine.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/Sample_Pipline/Sample_PipeLine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Sample_PipeLine.ngc Sample_PipeLine.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Sample_PipeLine_map.ncd Sample_PipeLine.ngd Sample_PipeLine.pcf 
+par -w -intstyle ise -ol high -mt off Sample_PipeLine_map.ncd Sample_PipeLine.ncd Sample_PipeLine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Sample_PipeLine.twx Sample_PipeLine.ncd -o Sample_PipeLine.twr Sample_PipeLine.pcf 

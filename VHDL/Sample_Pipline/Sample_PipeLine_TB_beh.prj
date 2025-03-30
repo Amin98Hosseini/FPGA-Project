@@ -1,0 +1,2 @@
+vhdl work "Sample_Pipline.vhd"
+vhdl work "Sample_PipeLine_Tb.vhd"
