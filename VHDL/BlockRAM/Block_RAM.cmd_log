@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BlockRAM/Block_RAM.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BlockRAM/Block_RAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Block_RAM.ngc Block_RAM.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Block_RAM_map.ncd Block_RAM.ngd Block_RAM.pcf 
+par -w -intstyle ise -ol high -mt off Block_RAM_map.ncd Block_RAM.ncd Block_RAM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Block_RAM.twx Block_RAM.ncd -o Block_RAM.twr Block_RAM.pcf 

@@ -1,0 +1,17 @@
+Release 14.7 - par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon Apr 07 21:31:53 2025
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 5 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   Mram_Mem_Signal1_RAMD_O
+   Mram_Mem_Signal2_RAMD_O
+   Mram_Mem_Signal3_RAMD_O
+   Mram_Mem_Signal4_RAMD_O
+   Mram_Mem_Signal5_RAMD_O
+
+
