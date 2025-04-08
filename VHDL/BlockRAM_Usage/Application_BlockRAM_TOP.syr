@@ -1,0 +1,417 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Reading design: Application_BlockRAM_TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Application_BlockRAM_TOP.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Application_BlockRAM_TOP"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : Application_BlockRAM_TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Amin\Documents\FPGA_Project\BlockRAM_Usage\Block_RAM.vhd" into library work
+Parsing entity <Block_RAM>.
+Parsing architecture <Behavioral> of entity <block_ram>.
+Parsing VHDL file "C:\Users\Amin\Documents\FPGA_Project\BlockRAM_Usage\Application_BlockRAM_TOP.vhd" into library work
+Parsing entity <Application_BlockRAM_TOP>.
+Parsing architecture <Behavioral> of entity <application_blockram_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Application_BlockRAM_TOP> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Block_RAM> (architecture <Behavioral>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Application_BlockRAM_TOP>.
+    Related source file is "C:\Users\Amin\Documents\FPGA_Project\BlockRAM_Usage\Application_BlockRAM_TOP.vhd".
+    Register <Data_In_Int> equivalent to <Write_Address_Int> has been removed
+    Found 8-bit register for signal <Write_Address_Int>.
+    Found 1-bit register for signal <WE_Int>.
+    Found 8-bit register for signal <RAM_Read_Count>.
+    Found 8-bit register for signal <Read_Address_Int>.
+    Found 8-bit register for signal <RAM_Write_Count>.
+    Found 8-bit adder for signal <RAM_Write_Count[7]_GND_4_o_add_1_OUT> created at line 1241.
+    Found 8-bit adder for signal <RAM_Read_Count[7]_GND_4_o_add_2_OUT> created at line 1241.
+    WARNING:Xst:2404 -  FFs/Latches <Data_In_Int<9:8>> (without init value) have a constant value of 0 in block <Application_BlockRAM_TOP>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+Unit <Application_BlockRAM_TOP> synthesized.
+
+Synthesizing Unit <Block_RAM>.
+    Related source file is "C:\Users\Amin\Documents\FPGA_Project\BlockRAM_Usage\Block_RAM.vhd".
+        RAM_Width = 10
+        RAM_AddWidth = 8
+    Set property "ram_style = Distributed" for signal <Mem_Signal>.
+    Found 256x10-bit dual-port RAM <Mram_Mem_Signal> for signal <Mem_Signal>.
+    Found 10-bit register for signal <Data_Out>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  10 D-type flip-flop(s).
+Unit <Block_RAM> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x10-bit dual-port RAM                              : 1
+# Adders/Subtractors                                   : 2
+ 8-bit adder                                           : 2
+# Registers                                            : 6
+ 1-bit register                                        : 1
+ 10-bit register                                       : 1
+ 8-bit register                                        : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch WE_Int hinder the constant cleaning in the block Application_BlockRAM_TOP.
+   You should achieve better results by setting this init to 1.
+
+Synthesizing (advanced) Unit <Application_BlockRAM_TOP>.
+The following registers are absorbed into counter <RAM_Read_Count>: 1 register on signal <RAM_Read_Count>.
+The following registers are absorbed into counter <RAM_Write_Count>: 1 register on signal <RAM_Write_Count>.
+Unit <Application_BlockRAM_TOP> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Block_RAM>.
+INFO:Xst:3216 - HDL ADVISOR - LUT implementation is currently selected for the RAM <Mram_Mem_Signal>. If you want the register to be removed and the RAM to be implemented as block RAM, please change the RAM implementation style accordingly.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 10-bit                   |          |
+    |     clkA           | connected to signal <Clock>         | rise     |
+    |     weA            | connected to signal <WE>            | high     |
+    |     addrA          | connected to signal <Write_Address> |          |
+    |     diA            | connected to signal <Data_In>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 10-bit                   |          |
+    |     addrB          | connected to signal <Read_Address>  |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Block_RAM> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x10-bit dual-port distributed RAM                  : 1
+# Counters                                             : 2
+ 8-bit up counter                                      : 2
+# Registers                                            : 27
+ Flip-Flops                                            : 27
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch WE_Int hinder the constant cleaning in the block Application_BlockRAM_TOP.
+   You should achieve better results by setting this init to 1.
+
+Optimizing unit <Application_BlockRAM_TOP> ...
+
+Optimizing unit <Block_RAM> ...
+INFO:Xst:2261 - The FF/Latch <Write_Address_Int_0> in Unit <Application_BlockRAM_TOP> is equivalent to the following FF/Latch, which will be removed : <Read_Address_Int_0> 
+INFO:Xst:2261 - The FF/Latch <RAM_Write_Count_0> in Unit <Application_BlockRAM_TOP> is equivalent to the following FF/Latch, which will be removed : <RAM_Read_Count_0> 
+INFO:Xst:3203 - The FF/Latch <RAM_Write_Count_1> in Unit <Application_BlockRAM_TOP> is the opposite to the following FF/Latch, which will be removed : <RAM_Read_Count_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Application_BlockRAM_TOP, actual ratio is 1.
+FlipFlop Write_Address_Int_0 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 41
+ Flip-Flops                                            : 41
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Application_BlockRAM_TOP.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 60
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 13
+#      LUT3                        : 4
+#      LUT6                        : 10
+#      MUXCY                       : 14
+#      VCC                         : 1
+#      XORCY                       : 14
+# FlipFlops/Latches                : 41
+#      FD                          : 41
+# RAMS                             : 16
+#      RAM64M                      : 12
+#      RAM64X1D                    : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      OBUF                        : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              41  out of  11440     0%  
+ Number of Slice LUTs:                   86  out of   5720     1%  
+    Number used as Logic:                30  out of   5720     0%  
+    Number used as Memory:               56  out of   1440     3%  
+       Number used as RAM:               56
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     94
+   Number with an unused Flip Flop:      53  out of     94    56%  
+   Number with an unused LUT:             8  out of     94     8%  
+   Number of fully used LUT-FF pairs:    33  out of     94    35%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of    102    10%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clock                              | BUFGP                  | 57    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.468ns (Maximum Frequency: 288.373MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock'
+  Clock period: 3.468ns (frequency: 288.373MHz)
+  Total number of paths / destination ports: 369 / 208
+-------------------------------------------------------------------------
+Delay:               3.468ns (Levels of Logic = 2)
+  Source:            Read_Address_Int_5 (FF)
+  Destination:       Inst_Block_RAM/Data_Out_9 (FF)
+  Source Clock:      Clock rising
+  Destination Clock: Clock rising
+
+  Data Path: Read_Address_Int_5 to Inst_Block_RAM/Data_Out_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              40   0.447   1.405  Read_Address_Int_5 (Read_Address_Int_5)
+     RAM64X1D:DPRA5->DPO    1   0.205   0.827  Inst_Block_RAM/Mram_Mem_Signal15 (Inst_Block_RAM/N83)
+     LUT6:I2->O            1   0.203   0.000  Inst_Block_RAM/inst_LPM_MUX911 (Inst_Block_RAM/_n0009<9>)
+     FD:D                      0.102          Inst_Block_RAM/Data_Out_9
+    ----------------------------------------
+    Total                      3.468ns (1.236ns logic, 2.232ns route)
+                                       (35.6% logic, 64.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            Inst_Block_RAM/Data_Out_9 (FF)
+  Destination:       Data_Out_App<9> (PAD)
+  Source Clock:      Clock rising
+
+  Data Path: Inst_Block_RAM/Data_Out_9 to Data_Out_App<9>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  Inst_Block_RAM/Data_Out_9 (Inst_Block_RAM/Data_Out_9)
+     OBUF:I->O                 2.571          Data_Out_App_9_OBUF (Data_Out_App<9>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |    3.468|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.48 secs
+ 
+--> 
+
+Total memory usage is 259872 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

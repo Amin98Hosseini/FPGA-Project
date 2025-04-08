@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BlockRAM_Usage/Application_BlockRAM_TOP.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BlockRAM_Usage/Application_BlockRAM_TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/BlockRAM_Usage/Application_BlockRAM_TOP.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/BlockRAM_Usage/Application_BlockRAM_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Application_BlockRAM_TOP.ngc Application_BlockRAM_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Application_BlockRAM_TOP_map.ncd Application_BlockRAM_TOP.ngd Application_BlockRAM_TOP.pcf 
+par -w -intstyle ise -ol high -mt off Application_BlockRAM_TOP_map.ncd Application_BlockRAM_TOP.ncd Application_BlockRAM_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Application_BlockRAM_TOP.twx Application_BlockRAM_TOP.ncd -o Application_BlockRAM_TOP.twr Application_BlockRAM_TOP.pcf 

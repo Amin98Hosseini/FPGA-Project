@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Amin/Documents/FPGA_Project/BlockRAM_Usage/Application_BlockRAM_TB_isim_beh.exe" -prj "C:/Users/Amin/Documents/FPGA_Project/BlockRAM_Usage/Application_BlockRAM_TB_beh.prj" "work.Application_BlockRAM_TB" 

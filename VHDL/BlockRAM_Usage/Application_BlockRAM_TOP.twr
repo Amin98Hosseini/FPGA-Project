@@ -1,0 +1,71 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Application_BlockRAM_TOP.twx Application_BlockRAM_TOP.ncd
+-o Application_BlockRAM_TOP.twr Application_BlockRAM_TOP.pcf
+
+Design file:              Application_BlockRAM_TOP.ncd
+Physical constraint file: Application_BlockRAM_TOP.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock Clock to Pad
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+               |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination    |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+Data_Out_App<0>|         7.486(R)|      SLOW  |         4.076(R)|      FAST  |Clock_BUFGP       |   0.000|
+Data_Out_App<1>|         7.486(R)|      SLOW  |         4.076(R)|      FAST  |Clock_BUFGP       |   0.000|
+Data_Out_App<2>|         7.357(R)|      SLOW  |         3.881(R)|      FAST  |Clock_BUFGP       |   0.000|
+Data_Out_App<3>|         7.344(R)|      SLOW  |         3.875(R)|      FAST  |Clock_BUFGP       |   0.000|
+Data_Out_App<4>|         8.014(R)|      SLOW  |         4.255(R)|      FAST  |Clock_BUFGP       |   0.000|
+Data_Out_App<5>|         8.014(R)|      SLOW  |         4.255(R)|      FAST  |Clock_BUFGP       |   0.000|
+Data_Out_App<6>|         8.051(R)|      SLOW  |         4.282(R)|      FAST  |Clock_BUFGP       |   0.000|
+Data_Out_App<7>|         8.051(R)|      SLOW  |         4.282(R)|      FAST  |Clock_BUFGP       |   0.000|
+Data_Out_App<8>|         8.284(R)|      SLOW  |         4.436(R)|      FAST  |Clock_BUFGP       |   0.000|
+Data_Out_App<9>|         8.442(R)|      SLOW  |         4.525(R)|      FAST  |Clock_BUFGP       |   0.000|
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |    4.836|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Apr 08 18:48:30 2025 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 213 MB
+
+
+

@@ -1,0 +1,3 @@
+vhdl isim_temp "Block_RAM.vhd"
+vhdl isim_temp "Application_BlockRAM_TOP.vhd"
+vhdl isim_temp "Application_BlockRAM_TB.vhd"

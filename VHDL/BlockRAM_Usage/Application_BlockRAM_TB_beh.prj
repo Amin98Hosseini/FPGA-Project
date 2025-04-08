@@ -1,0 +1,3 @@
+vhdl work "Block_RAM.vhd"
+vhdl work "Application_BlockRAM_TOP.vhd"
+vhdl work "Application_BlockRAM_TB.vhd"
