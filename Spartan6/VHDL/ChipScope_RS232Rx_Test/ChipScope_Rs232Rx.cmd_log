@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/ChipScope_RS232Rx_Test/ChipScope_Rs232Rx.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/ChipScope_RS232Rx_Test/ChipScope_Rs232Rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 ChipScope_Rs232Rx.ngc ChipScope_Rs232Rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ChipScope_Rs232Rx_map.ncd ChipScope_Rs232Rx.ngd ChipScope_Rs232Rx.pcf 
+par -w -intstyle ise -ol high -mt off ChipScope_Rs232Rx_map.ncd ChipScope_Rs232Rx.ncd ChipScope_Rs232Rx.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ChipScope_Rs232Rx.twx ChipScope_Rs232Rx.ncd -o ChipScope_Rs232Rx.twr ChipScope_Rs232Rx.pcf 
+bitgen -intstyle ise -f ChipScope_Rs232Rx.ut ChipScope_Rs232Rx.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/ChipScope_RS232Rx_Test/ChipScope_Rs232Rx.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/ChipScope_RS232Rx_Test/ChipScope_Rs232Rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 ChipScope_Rs232Rx.ngc ChipScope_Rs232Rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ChipScope_Rs232Rx_map.ncd ChipScope_Rs232Rx.ngd ChipScope_Rs232Rx.pcf 
+par -w -intstyle ise -ol high -mt off ChipScope_Rs232Rx_map.ncd ChipScope_Rs232Rx.ncd ChipScope_Rs232Rx.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ChipScope_Rs232Rx.twx ChipScope_Rs232Rx.ncd -o ChipScope_Rs232Rx.twr ChipScope_Rs232Rx.pcf 
+bitgen -intstyle ise -f ChipScope_Rs232Rx.ut ChipScope_Rs232Rx.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 ChipScope_Rs232Rx.ngc ChipScope_Rs232Rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ChipScope_Rs232Rx_map.ncd ChipScope_Rs232Rx.ngd ChipScope_Rs232Rx.pcf 
+par -w -intstyle ise -ol high -mt off ChipScope_Rs232Rx_map.ncd ChipScope_Rs232Rx.ncd ChipScope_Rs232Rx.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ChipScope_Rs232Rx.twx ChipScope_Rs232Rx.ncd -o ChipScope_Rs232Rx.twr ChipScope_Rs232Rx.pcf 
+bitgen -intstyle ise -f ChipScope_Rs232Rx.ut ChipScope_Rs232Rx.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/ChipScope_RS232Rx_Test/ChipScope_Rs232Rx.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/ChipScope_RS232Rx_Test/ChipScope_Rs232Rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ChipScope_Rs232Rx.ucf -p xc6slx9-tqg144-3 ChipScope_Rs232Rx.ngc ChipScope_Rs232Rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ChipScope_Rs232Rx_map.ncd ChipScope_Rs232Rx.ngd ChipScope_Rs232Rx.pcf 
+par -w -intstyle ise -ol high -mt off ChipScope_Rs232Rx_map.ncd ChipScope_Rs232Rx.ncd ChipScope_Rs232Rx.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ChipScope_Rs232Rx.twx ChipScope_Rs232Rx.ncd -o ChipScope_Rs232Rx.twr ChipScope_Rs232Rx.pcf -ucf ChipScope_Rs232Rx.ucf 
+bitgen -intstyle ise -f ChipScope_Rs232Rx.ut ChipScope_Rs232Rx.ncd 

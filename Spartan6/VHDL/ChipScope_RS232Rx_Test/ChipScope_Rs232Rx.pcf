@@ -1,0 +1,9 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Apr 11 21:42:54 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Clock" LOCATE = SITE "P85" LEVEL 1;
+COMP "Serial_Rx" LOCATE = SITE "P40" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,4 @@
+vhdl work "ipcore_dir/icon_t.vhd"
+vhdl work "ipcore_dir/ila_t.vhd"
+vhdl work "Rs232_Rx.vhd"
+vhdl work "ChipScope_Rs232Rx.vhd"

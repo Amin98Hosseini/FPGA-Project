@@ -1,0 +1,3 @@
+NET	"Clock" 						LOC = p85;
+
+NET	"Serial_Rx"					LOC = p40;

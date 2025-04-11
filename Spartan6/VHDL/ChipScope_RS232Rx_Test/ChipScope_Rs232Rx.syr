@@ -1,0 +1,599 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Reading design: ChipScope_Rs232Rx.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ChipScope_Rs232Rx.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ChipScope_Rs232Rx"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : ChipScope_Rs232Rx
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Amin\Documents\FPGA_Project\ChipScope_RS232Rx_Test\ipcore_dir\icon_t.vhd" into library work
+Parsing entity <icon_t>.
+Parsing architecture <icon_t_a> of entity <icon_t>.
+Parsing VHDL file "C:\Users\Amin\Documents\FPGA_Project\ChipScope_RS232Rx_Test\ipcore_dir\ila_t.vhd" into library work
+Parsing entity <ila_t>.
+Parsing architecture <ila_t_a> of entity <ila_t>.
+Parsing VHDL file "C:\Users\Amin\Documents\FPGA_Project\ChipScope_RS232Rx_Test\Rs232_Rx.vhd" into library work
+Parsing entity <RS232_Rx>.
+Parsing architecture <Behavioral> of entity <rs232_rx>.
+Parsing VHDL file "C:\Users\Amin\Documents\FPGA_Project\ChipScope_RS232Rx_Test\ChipScope_Rs232Rx.vhd" into library work
+Parsing entity <ChipScope_Rs232Rx>.
+Parsing architecture <Behavioral> of entity <chipscope_rs232rx>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <ChipScope_Rs232Rx> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <icon_t> (architecture <icon_t_a>) from library <work>.
+
+Elaborating entity <ila_t> (architecture <ila_t_a>) from library <work>.
+
+Elaborating entity <RS232_Rx> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ChipScope_Rs232Rx>.
+    Related source file is "C:\Users\Amin\Documents\FPGA_Project\ChipScope_RS232Rx_Test\ChipScope_Rs232Rx.vhd".
+    Summary:
+	no macro.
+Unit <ChipScope_Rs232Rx> synthesized.
+
+Synthesizing Unit <RS232_Rx>.
+    Related source file is "C:\Users\Amin\Documents\FPGA_Project\ChipScope_RS232Rx_Test\Rs232_Rx.vhd".
+    Found 1-bit register for signal <Serial_Prev>.
+    Found 1-bit register for signal <Valid_Int>.
+    Found 13-bit register for signal <Bit_Width_Count>.
+    Found 4-bit register for signal <Data_Bit_Count>.
+    Found 16-bit register for signal <Data_Int>.
+    Found 1-bit register for signal <Parity_Bit>.
+    Found 1-bit register for signal <Packet_Detection>.
+    Found 1-bit register for signal <Find_Bit_Center_State>.
+    Found 1-bit register for signal <Serial_Int>.
+    Found 13-bit adder for signal <Bit_Width_Count[12]_GND_7_o_add_1_OUT> created at line 1241.
+    Found 4-bit adder for signal <Data_Bit_Count[3]_GND_7_o_add_3_OUT> created at line 1241.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  39 D-type flip-flop(s).
+	inferred  17 Multiplexer(s).
+Unit <RS232_Rx> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 13-bit adder                                          : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 9
+ 1-bit register                                        : 6
+ 13-bit register                                       : 1
+ 16-bit register                                       : 1
+ 4-bit register                                        : 1
+# Multiplexers                                         : 17
+ 1-bit 2-to-1 multiplexer                              : 16
+ 13-bit 2-to-1 multiplexer                             : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/ila_t.ngc>.
+Reading core <ipcore_dir/icon_t.ngc>.
+Loading core <ila_t> for timing and area information for instance <ila_inst>.
+Loading core <icon_t> for timing and area information for instance <icon_inst>.
+
+Synthesizing (advanced) Unit <RS232_Rx>.
+The following registers are absorbed into counter <Bit_Width_Count>: 1 register on signal <Bit_Width_Count>.
+The following registers are absorbed into counter <Data_Bit_Count>: 1 register on signal <Data_Bit_Count>.
+Unit <RS232_Rx> synthesized (advanced).
+WARNING:Xst:2677 - Node <Data_Int_8> of sequential type is unconnected in block <RS232_Rx>.
+WARNING:Xst:2677 - Node <Data_Int_9> of sequential type is unconnected in block <RS232_Rx>.
+WARNING:Xst:2677 - Node <Data_Int_10> of sequential type is unconnected in block <RS232_Rx>.
+WARNING:Xst:2677 - Node <Data_Int_11> of sequential type is unconnected in block <RS232_Rx>.
+WARNING:Xst:2677 - Node <Data_Int_12> of sequential type is unconnected in block <RS232_Rx>.
+WARNING:Xst:2677 - Node <Data_Int_13> of sequential type is unconnected in block <RS232_Rx>.
+WARNING:Xst:2677 - Node <Data_Int_14> of sequential type is unconnected in block <RS232_Rx>.
+WARNING:Xst:2677 - Node <Data_Int_15> of sequential type is unconnected in block <RS232_Rx>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 13-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 14
+ Flip-Flops                                            : 14
+# Multiplexers                                         : 8
+ 1-bit 2-to-1 multiplexer                              : 8
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ChipScope_Rs232Rx> ...
+
+Optimizing unit <RS232_Rx> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ChipScope_Rs232Rx, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 31
+ Flip-Flops                                            : 31
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ChipScope_Rs232Rx.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 395
+#      GND                         : 3
+#      INV                         : 8
+#      LUT1                        : 63
+#      LUT2                        : 23
+#      LUT3                        : 16
+#      LUT4                        : 89
+#      LUT5                        : 9
+#      LUT6                        : 27
+#      MUXCY                       : 12
+#      MUXCY_L                     : 64
+#      MUXF5                       : 2
+#      MUXF6                       : 1
+#      MUXF7                       : 10
+#      MUXF8                       : 2
+#      VCC                         : 3
+#      XORCY                       : 63
+# FlipFlops/Latches                : 239
+#      FD                          : 23
+#      FDC                         : 9
+#      FDCE                        : 16
+#      FDE                         : 40
+#      FDP                         : 4
+#      FDR                         : 61
+#      FDRE                        : 75
+#      FDS                         : 10
+#      LDC                         : 1
+# RAMS                             : 1
+#      RAMB8BWER                   : 1
+# Shift Registers                  : 46
+#      SRL16                       : 8
+#      SRL16E                      : 1
+#      SRLC16E                     : 8
+#      SRLC32E                     : 29
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 1
+#      IBUF                        : 1
+# Others                           : 1
+#      BSCAN_SPARTAN6              : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             239  out of  11440     2%  
+ Number of Slice LUTs:                  281  out of   5720     4%  
+    Number used as Logic:               235  out of   5720     4%  
+    Number used as Memory:               46  out of   1440     3%  
+       Number used as SRL:               46
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    415
+   Number with an unused Flip Flop:     176  out of    415    42%  
+   Number with an unused LUT:           134  out of    415    32%  
+   Number of fully used LUT-FF pairs:   105  out of    415    25%  
+   Number of unique control sets:        54
+
+IO Utilization: 
+ Number of IOs:                           2
+ Number of bonded IOBs:                   2  out of    102     1%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------------------------+------------------------------------------------------+-------+
+Clock Signal                                                                    | Clock buffer(FF name)                                | Load  |
+--------------------------------------------------------------------------------+------------------------------------------------------+-------+
+Clock                                                                           | BUFGP                                                | 166   |
+icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL                                | BUFG                                                 | 119   |
+icon_inst/CONTROL0<13>(icon_inst/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE:O)| NONE(*)(ila_inst/U0/I_YES_D.U_ILA/U_STAT/U_DIRTY_LDC)| 1     |
+icon_inst/U0/iUPDATE_OUT                                                        | NONE(icon_inst/U0/U_ICON/U_iDATA_CMD)                | 1     |
+--------------------------------------------------------------------------------+------------------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 6.607ns (Maximum Frequency: 151.345MHz)
+   Minimum input arrival time before clock: 5.660ns
+   Maximum output required time after clock: 0.447ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock'
+  Clock period: 4.985ns (frequency: 200.594MHz)
+  Total number of paths / destination ports: 1242 / 324
+-------------------------------------------------------------------------
+Delay:               4.985ns (Levels of Logic = 3)
+  Source:            Inst_RS232_Rx/Bit_Width_Count_8 (FF)
+  Destination:       Inst_RS232_Rx/Bit_Width_Count_12 (FF)
+  Source Clock:      Clock rising
+  Destination Clock: Clock rising
+
+  Data Path: Inst_RS232_Rx/Bit_Width_Count_8 to Inst_RS232_Rx/Bit_Width_Count_12
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.864  Inst_RS232_Rx/Bit_Width_Count_8 (Inst_RS232_Rx/Bit_Width_Count_8)
+     LUT4:I0->O            2   0.203   0.981  Inst_RS232_Rx/Bit_Width_Count[12]_Find_Bit_Center_State_AND_35_o11 (Inst_RS232_Rx/Bit_Width_Count[12]_Find_Bit_Center_State_AND_35_o1)
+     LUT6:I0->O            2   0.203   0.721  Inst_RS232_Rx/Bit_Width_Count[12]_Find_Bit_Center_State_AND_35_o (Inst_RS232_Rx/Bit_Width_Count[12]_Find_Bit_Center_State_AND_35_o)
+     LUT5:I3->O           13   0.203   0.932  Inst_RS232_Rx/Bit_Width_Count[12]_PWR_7_o_equal_3_o_01 (Inst_RS232_Rx/Bit_Width_Count[12]_PWR_7_o_equal_3_o_0)
+     FDR:R                     0.430          Inst_RS232_Rx/Bit_Width_Count_2
+    ----------------------------------------
+    Total                      4.985ns (1.486ns logic, 3.499ns route)
+                                       (29.8% logic, 70.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Clock period: 6.607ns (frequency: 151.345MHz)
+  Total number of paths / destination ports: 1777 / 217
+-------------------------------------------------------------------------
+Delay:               6.607ns (Levels of Logic = 5)
+  Source:            icon_inst/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET (FF)
+  Destination:       ila_inst/U0/I_YES_D.U_ILA/U_STAT/U_STAT_CNT/G[0].U_FDRE (FF)
+  Source Clock:      icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+  Destination Clock: icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: icon_inst/U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET to ila_inst/U0/I_YES_D.U_ILA/U_STAT/U_STAT_CNT/G[0].U_FDRE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            18   0.447   1.297  U0/U_ICON/U_CMD/G_TARGET[12].I_NE0.U_TARGET (U0/U_ICON/iCORE_ID<0>)
+     LUT4:I0->O           32   0.203   1.396  U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[0].U_LUT (U0/U_ICON/iCORE_ID_SEL<0>)
+     LUT4:I2->O            4   0.203   0.788  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_LCE (CONTROL0<4>)
+     end scope: 'icon_inst:CONTROL0<4>'
+     begin scope: 'ila_inst:CONTROL<4>'
+     LUT2:I0->O            1   0.203   0.579  U0/I_YES_D.U_ILA/U_STAT/U_STATCMD (U0/I_YES_D.U_ILA/U_STAT/iSTATCMD_CE)
+     INV:I->O             10   0.206   0.856  U0/I_YES_D.U_ILA/U_STAT/U_STATCMD_n (U0/I_YES_D.U_ILA/U_STAT/iSTATCMD_CE_n)
+     FDRE:R                    0.430          U0/I_YES_D.U_ILA/U_STAT/U_STAT_CNT/G[9].U_FDRE
+    ----------------------------------------
+    Total                      6.607ns (1.692ns logic, 4.915ns route)
+                                       (25.6% logic, 74.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'icon_inst/U0/iUPDATE_OUT'
+  Clock period: 1.984ns (frequency: 504.007MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.984ns (Levels of Logic = 1)
+  Source:            icon_inst/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:       icon_inst/U0/U_ICON/U_iDATA_CMD (FF)
+  Source Clock:      icon_inst/U0/iUPDATE_OUT rising
+  Destination Clock: icon_inst/U0/iUPDATE_OUT rising
+
+  Data Path: icon_inst/U0/U_ICON/U_iDATA_CMD to icon_inst/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.447   0.650  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              1   0.206   0.579  U0/U_ICON/U_iDATA_CMD_n (U0/U_ICON/iDATA_CMD_n)
+     FDC:D                     0.102          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      1.984ns (0.755ns logic, 1.229ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clock'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              4.631ns (Levels of Logic = 4)
+  Source:            icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT (PAD)
+  Destination:       ila_inst/U0/I_YES_D.U_ILA/U_STAT/U_DSL1/U_RFDRE (FF)
+  Destination Clock: Clock rising
+
+  Data Path: icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT to ila_inst/U0/I_YES_D.U_ILA/U_STAT/U_DSL1/U_RFDRE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SHIFT    3   0.000   0.651  U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           32   0.205   1.539  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O            5   0.203   0.715  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE (CONTROL0<13>)
+     end scope: 'icon_inst:CONTROL0<13>'
+     begin scope: 'ila_inst:CONTROL<13>'
+     LUT2:I1->O            4   0.205   0.683  U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/U_CLEAR (U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/iCLR)
+     FDCE:CLR                  0.430          U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/U_RFDRE
+    ----------------------------------------
+    Total                      4.631ns (1.043ns logic, 3.588ns route)
+                                       (22.5% logic, 77.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Total number of paths / destination ports: 145 / 133
+-------------------------------------------------------------------------
+Offset:              5.660ns (Levels of Logic = 5)
+  Source:            icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT (PAD)
+  Destination:       ila_inst/U0/I_YES_D.U_ILA/U_STAT/U_STAT_CNT/G[0].U_FDRE (FF)
+  Destination Clock: icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT to ila_inst/U0/I_YES_D.U_ILA/U_STAT/U_STAT_CNT/G[0].U_FDRE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SHIFT    3   0.000   0.651  U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           32   0.205   1.539  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O            4   0.203   0.788  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_LCE (CONTROL0<4>)
+     end scope: 'icon_inst:CONTROL0<4>'
+     begin scope: 'ila_inst:CONTROL<4>'
+     LUT2:I0->O            1   0.203   0.579  U0/I_YES_D.U_ILA/U_STAT/U_STATCMD (U0/I_YES_D.U_ILA/U_STAT/iSTATCMD_CE)
+     INV:I->O             10   0.206   0.856  U0/I_YES_D.U_ILA/U_STAT/U_STATCMD_n (U0/I_YES_D.U_ILA/U_STAT/iSTATCMD_CE_n)
+     FDRE:R                    0.430          U0/I_YES_D.U_ILA/U_STAT/U_STAT_CNT/G[9].U_FDRE
+    ----------------------------------------
+    Total                      5.660ns (1.247ns logic, 4.413ns route)
+                                       (22.0% logic, 78.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'icon_inst/U0/iUPDATE_OUT'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.831ns (Levels of Logic = 1)
+  Source:            icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SEL (PAD)
+  Destination:       icon_inst/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination Clock: icon_inst/U0/iUPDATE_OUT rising
+
+  Data Path: icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SEL to icon_inst/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SEL     2   0.000   0.616  U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/U_ICON/iSEL)
+     INV:I->O              1   0.206   0.579  U0/U_ICON/U_iSEL_n (U0/U_ICON/iSEL_n)
+     FDC:CLR                   0.430          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      1.831ns (0.636ns logic, 1.195ns route)
+                                       (34.7% logic, 65.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.447ns (Levels of Logic = 0)
+  Source:            icon_inst/U0/U_ICON/U_TDO_reg (FF)
+  Destination:       icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:TDO (PAD)
+  Source Clock:      icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: icon_inst/U0/U_ICON/U_TDO_reg to icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              0   0.447   0.000  U0/U_ICON/U_TDO_reg (U0/U_ICON/iTDO)
+    BSCAN_SPARTAN6:TDO         0.000          U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS
+    ----------------------------------------
+    Total                      0.447ns (0.447ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clock
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+Clock                                           |    4.985|         |         |         |
+icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    5.579|         |         |         |
+------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock icon_inst/CONTROL0<13>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |         |         |    1.948|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+Clock                                           |    3.634|         |         |         |
+icon_inst/CONTROL0<13>                          |         |    4.643|         |         |
+icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    6.607|         |         |         |
+icon_inst/U0/iUPDATE_OUT                        |    2.583|         |         |         |
+------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock icon_inst/U0/iUPDATE_OUT
+------------------------+---------+---------+---------+---------+
+                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------+---------+---------+---------+---------+
+icon_inst/U0/iUPDATE_OUT|    1.984|         |         |         |
+------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.04 secs
+ 
+--> 
+
+Total memory usage is 261600 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

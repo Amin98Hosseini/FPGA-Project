@@ -1,0 +1,55 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ChipScope_Rs232Rx.ucf -p
+xc6slx9-tqg144-3 ChipScope_Rs232Rx.ngc ChipScope_Rs232Rx.ngd
+
+Reading NGO file
+"C:/Users/Amin/Documents/FPGA_Project/ChipScope_RS232Rx_Test/ChipScope_Rs232Rx.n
+gc" ...
+Loading design module "ipcore_dir/ila_t.ngc"...
+Loading design module "ipcore_dir/icon_t.ngc"...
+INFO:NgdBuild:1317 - Using core chipscope_ila_v1 requires a ChipScopePro
+   license.  The following blocks are instances of core chipscope_ila_v1:
+	/ChipScope_Rs232Rx/ChipScope_Rs232Rx
+	/ChipScope_Rs232Rx/ila_inst
+
+-----------------------------------------------
+INFO:Security:71 - If a license for part 'xc6slx9' is available, it will be
+possible to use 'ChipScopePro_TDP' instead of 'ChipScopePro'.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+
+-----------------------------------------------
+
+-----------------------------------------------
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "ChipScope_Rs232Rx.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 240476 kilobytes
+
+Writing NGD file "ChipScope_Rs232Rx.ngd" ...
+Total REAL time to NGDBUILD completion:  1 sec
+Total CPU time to NGDBUILD completion:   1 sec
+
+Writing NGDBUILD log file "ChipScope_Rs232Rx.bld"...
