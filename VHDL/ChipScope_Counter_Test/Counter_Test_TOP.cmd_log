@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/2_RS232_RX/ChipScope_Counter_Test/Counter_Test_TOP.xst" -ofn "C:/Users/Amin/Desktop/2_RS232_RX/ChipScope_Counter_Test/Counter_Test_TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/2_RS232_RX/ChipScope_Counter_Test/Counter_Test_TOP.xst" -ofn "C:/Users/Amin/Desktop/2_RS232_RX/ChipScope_Counter_Test/Counter_Test_TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/2_RS232_RX/ChipScope_Counter_Test/Counter_Test_TOP.xst" -ofn "C:/Users/Amin/Desktop/2_RS232_RX/ChipScope_Counter_Test/Counter_Test_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 Counter_Test_TOP.ngc Counter_Test_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Counter_Test_TOP_map.ncd Counter_Test_TOP.ngd Counter_Test_TOP.pcf 
+par -w -intstyle ise -ol high -mt off Counter_Test_TOP_map.ncd Counter_Test_TOP.ncd Counter_Test_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Counter_Test_TOP.twx Counter_Test_TOP.ncd -o Counter_Test_TOP.twr Counter_Test_TOP.pcf 
+bitgen -intstyle ise -f Counter_Test_TOP.ut Counter_Test_TOP.ncd 
+bitgen -intstyle ise -f Counter_Test_TOP.ut Counter_Test_TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/ChipScope_Counter_Test/Counter_Test_TOP.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/ChipScope_Counter_Test/Counter_Test_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Counter_Test_ChipScop.ucf -p xc6slx9-tqg144-3 Counter_Test_TOP.ngc Counter_Test_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Counter_Test_TOP_map.ncd Counter_Test_TOP.ngd Counter_Test_TOP.pcf 
+par -w -intstyle ise -ol high -mt off Counter_Test_TOP_map.ncd Counter_Test_TOP.ncd Counter_Test_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Counter_Test_TOP.twx Counter_Test_TOP.ncd -o Counter_Test_TOP.twr Counter_Test_TOP.pcf -ucf Counter_Test_ChipScop.ucf 
+bitgen -intstyle ise -f Counter_Test_TOP.ut Counter_Test_TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Documents/FPGA_Project/ChipScope_Counter_Test/Counter_Test_TOP.xst" -ofn "C:/Users/Amin/Documents/FPGA_Project/ChipScope_Counter_Test/Counter_Test_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Counter_Test_ChipScop.ucf -p xc6slx9-tqg144-3 Counter_Test_TOP.ngc Counter_Test_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Counter_Test_TOP_map.ncd Counter_Test_TOP.ngd Counter_Test_TOP.pcf 
+par -w -intstyle ise -ol high -mt off Counter_Test_TOP_map.ncd Counter_Test_TOP.ncd Counter_Test_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Counter_Test_TOP.twx Counter_Test_TOP.ncd -o Counter_Test_TOP.twr Counter_Test_TOP.pcf -ucf Counter_Test_ChipScop.ucf 
+bitgen -intstyle ise -f Counter_Test_TOP.ut Counter_Test_TOP.ncd 

@@ -1,0 +1,4 @@
+vhdl work "ipcore_dir/icon_inst.vhd"
+vhdl work "ipcore_dir/ila_inst.vhd"
+vhdl work "UpDown_Counter.vhd"
+vhdl work "Counter_Test_TOP.vhd"

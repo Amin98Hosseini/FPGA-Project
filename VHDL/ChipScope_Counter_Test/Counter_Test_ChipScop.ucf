@@ -1,0 +1,10 @@
+NET	"Clock" 				LOC = p85;
+
+NET	"Counter_Out[0]"	LOC = p34; 		#1
+NET	"Counter_Out[1]"	LOC = p32;		#3
+NET	"Counter_Out[2]"	LOC = p30;		#5	
+NET	"Counter_Out[3]"	LOC = p29;		#7	
+NET	"Counter_Out[4]"	LOC = p27;		#9
+NET	"Counter_Out[5]"	LOC = p26;		#11
+NET	"Counter_Out[6]"	LOC = p24;		#13
+NET	"Counter_Out[7]"	LOC = p23;		#15

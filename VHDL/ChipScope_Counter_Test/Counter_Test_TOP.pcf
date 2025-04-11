@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Apr 11 20:07:09 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Clock" LOCATE = SITE "P85" LEVEL 1;
+COMP "Counter_Out<0>" LOCATE = SITE "P34" LEVEL 1;
+COMP "Counter_Out<1>" LOCATE = SITE "P32" LEVEL 1;
+COMP "Counter_Out<2>" LOCATE = SITE "P30" LEVEL 1;
+COMP "Counter_Out<3>" LOCATE = SITE "P29" LEVEL 1;
+COMP "Counter_Out<4>" LOCATE = SITE "P27" LEVEL 1;
+COMP "Counter_Out<5>" LOCATE = SITE "P26" LEVEL 1;
+COMP "Counter_Out<6>" LOCATE = SITE "P24" LEVEL 1;
+COMP "Counter_Out<7>" LOCATE = SITE "P23" LEVEL 1;
+SCHEMATIC END;
+
