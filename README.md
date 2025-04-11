@@ -53,6 +53,7 @@ Here is a list of the available examples in this repository:
 26. **Sample Pipline** :Implementation Simple pipline With Vhdl
 27. **Block RAM** :Implementation Simple Blcok RAM With Vhdl
 28. **BlockRAM Usage** :Implementation Simple Usage Blcok RAM With Vhdl
+29. **ChipScope Counter Test** :Implementation HDL Code Usage ChipScope In Simple Counter With Vhdl.
 
 Each example is contained in its own folder with the corresponding VHDL file(s).
 
