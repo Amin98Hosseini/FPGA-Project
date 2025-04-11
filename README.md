@@ -54,6 +54,7 @@ Here is a list of the available examples in this repository:
 27. **Block RAM** :Implementation Simple Blcok RAM With Vhdl
 28. **BlockRAM Usage** :Implementation Simple Usage Blcok RAM With Vhdl
 29. **ChipScope Counter Test** :Implementation HDL Code Usage ChipScope In Simple Counter With Vhdl.
+30. **ChipScope RS232Rx Test** :Implementation HDL Code Usage ChipScope In Rs232Rx Module With Vhdl.
 
 Each example is contained in its own folder with the corresponding VHDL file(s).
 
