@@ -1,0 +1,38 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc Sram.ucf -p xc6slx9-tqg144-2
+SRAM_Interface_Module.ngc SRAM_Interface_Module.ngd
+
+Reading NGO file
+"C:/Users/Amin/Documents/FPGA_Project/Fulladder/Test1/SRAM_Interface_V1/SRAM_Int
+erface_Module.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "Sram.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 163720 kilobytes
+
+Writing NGD file "SRAM_Interface_Module.ngd" ...
+Total REAL time to NGDBUILD completion:  0 sec
+Total CPU time to NGDBUILD completion:   0 sec
+
+Writing NGDBUILD log file "SRAM_Interface_Module.bld"...

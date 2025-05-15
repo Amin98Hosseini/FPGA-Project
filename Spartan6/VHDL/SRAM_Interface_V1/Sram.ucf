@@ -1,0 +1,45 @@
+NET	"Clock" 						LOC = p85;
+
+NET	"Rst"				LOC = p87;
+
+NET	"LED[0]" 					LOC = p105;
+NET	"LED[1]" 					LOC = p104;
+NET	"LED[2]" 					LOC = p102;
+NET	"LED[3]" 					LOC = p101;
+
+NET	"Data_DIR"					LOC = p84;
+#NET	"DIP_Switch[1]"			LOC = p81;
+#NET	"DIP_Switch[2]"			LOC = p79;
+#NET	"DIP_Switch[3]"			LOC = p74;
+
+
+NET	"Data[0]"				LOC = p142;
+NET	"Data[1]"				LOC = p141;
+NET	"Data[2]"				LOC = p140;
+NET	"Data[3]"				LOC = p139;
+NET	"Data[4]"				LOC = p112;
+NET	"Data[5]"				LOC = p111;
+NET	"Data[6]"				LOC = p119;
+NET	"Data[7]"				LOC = p120;
+NET	"Address[0]"			LOC = p6;
+NET	"Address[1]"			LOC = p5;
+NET	"Address[2]"			LOC = p2;
+NET	"Address[3]"			LOC = p1;
+NET	"Address[4]"			LOC = p144;
+NET	"Address[5]"			LOC = p137;
+NET	"Address[6]"			LOC = p134;
+NET	"Address[7]"			LOC = p133;
+NET	"Address[8]"			LOC = p132;
+NET	"Address[9]"			LOC = p131;
+NET	"Address[10]"		LOC = p118;
+NET	"Address[11]"		LOC = p117;
+NET	"Address[12]"		LOC = p116;
+NET	"Address[13]"		LOC = p115;
+NET	"Address[14]"		LOC = p114;
+NET	"Address[15]"		LOC = p123;
+NET	"Address[16]"		LOC = p124;
+NET	"Address[17]"		LOC = p126;
+NET	"Address[18]"		LOC = p127;
+NET	"WE"					LOC = p138;
+NET	"CE"					LOC = p143;
+NET	"OE"					LOC = p121;

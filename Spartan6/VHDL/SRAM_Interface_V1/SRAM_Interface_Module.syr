@@ -1,0 +1,470 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Reading design: SRAM_Interface_Module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SRAM_Interface_Module.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SRAM_Interface_Module"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : SRAM_Interface_Module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Amin\Documents\FPGA_Project\Fulladder\Test1\SRAM_Interface_V1\SRAM_Interface_Module.vhd" into library work
+Parsing entity <SRAM_Interface_Module>.
+Parsing architecture <Behavioral> of entity <sram_interface_module>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <SRAM_Interface_Module> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SRAM_Interface_Module>.
+    Related source file is "C:\Users\Amin\Documents\FPGA_Project\Fulladder\Test1\SRAM_Interface_V1\SRAM_Interface_Module.vhd".
+    Found 1-bit register for signal <OE_Int>.
+    Found 1-bit register for signal <CE_Int>.
+    Found 19-bit register for signal <Address_Int>.
+    Found 8-bit register for signal <Data_Out>.
+    Found 8-bit register for signal <Data_In>.
+    Found 4-bit register for signal <LED>.
+    Found 1-bit register for signal <WE_Int>.
+    Found 1-bit tristate buffer for signal <Data<7>> created at line 35
+    Found 1-bit tristate buffer for signal <Data<6>> created at line 35
+    Found 1-bit tristate buffer for signal <Data<5>> created at line 35
+    Found 1-bit tristate buffer for signal <Data<4>> created at line 35
+    Found 1-bit tristate buffer for signal <Data<3>> created at line 35
+    Found 1-bit tristate buffer for signal <Data<2>> created at line 35
+    Found 1-bit tristate buffer for signal <Data<1>> created at line 35
+    Found 1-bit tristate buffer for signal <Data<0>> created at line 35
+    Summary:
+	inferred  42 D-type flip-flop(s).
+	inferred   8 Tristate(s).
+Unit <SRAM_Interface_Module> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 7
+ 1-bit register                                        : 3
+ 19-bit register                                       : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 2
+# Tristates                                            : 8
+ 1-bit tristate buffer                                 : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <Address_Int_18> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_17> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_16> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_15> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_14> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_13> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_12> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_11> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_10> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_9> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_8> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_7> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_6> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_5> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_4> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_3> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_2> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_1> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Data_Out_0> of sequential type is unconnected in block <SRAM_Interface_Module>.
+WARNING:Xst:2677 - Node <Data_Out_4> of sequential type is unconnected in block <SRAM_Interface_Module>.
+WARNING:Xst:2677 - Node <Data_Out_5> of sequential type is unconnected in block <SRAM_Interface_Module>.
+WARNING:Xst:2677 - Node <Data_Out_6> of sequential type is unconnected in block <SRAM_Interface_Module>.
+WARNING:Xst:2677 - Node <Data_Out_7> of sequential type is unconnected in block <SRAM_Interface_Module>.
+WARNING:Xst:2677 - Node <Data_In_4> of sequential type is unconnected in block <SRAM_Interface_Module>.
+WARNING:Xst:2677 - Node <Data_In_5> of sequential type is unconnected in block <SRAM_Interface_Module>.
+WARNING:Xst:2677 - Node <Data_In_6> of sequential type is unconnected in block <SRAM_Interface_Module>.
+WARNING:Xst:2677 - Node <Data_In_7> of sequential type is unconnected in block <SRAM_Interface_Module>.
+WARNING:Xst:2677 - Node <Data_Out_0> of sequential type is unconnected in block <SRAM_Interface_Module>.
+WARNING:Xst:2677 - Node <Data_Out_4> of sequential type is unconnected in block <SRAM_Interface_Module>.
+WARNING:Xst:2677 - Node <Data_Out_5> of sequential type is unconnected in block <SRAM_Interface_Module>.
+WARNING:Xst:2677 - Node <Data_Out_6> of sequential type is unconnected in block <SRAM_Interface_Module>.
+WARNING:Xst:2677 - Node <Data_Out_7> of sequential type is unconnected in block <SRAM_Interface_Module>.
+WARNING:Xst:2677 - Node <Data_In_4> of sequential type is unconnected in block <SRAM_Interface_Module>.
+WARNING:Xst:2677 - Node <Data_In_5> of sequential type is unconnected in block <SRAM_Interface_Module>.
+WARNING:Xst:2677 - Node <Data_In_6> of sequential type is unconnected in block <SRAM_Interface_Module>.
+WARNING:Xst:2677 - Node <Data_In_7> of sequential type is unconnected in block <SRAM_Interface_Module>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <Address_Int_18> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_17> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_16> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_15> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_14> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_13> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_12> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_11> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_10> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_9> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_8> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_7> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_6> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_5> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_4> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_3> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_2> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Address_Int_1> has a constant value of 0 in block <SRAM_Interface_Module>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <SRAM_Interface_Module> ...
+INFO:Xst:2261 - The FF/Latch <Data_Out_1> in Unit <SRAM_Interface_Module> is equivalent to the following 2 FFs/Latches, which will be removed : <Data_Out_2> <Data_Out_3> 
+INFO:Xst:3203 - The FF/Latch <CE_Int> in Unit <SRAM_Interface_Module> is the opposite to the following FF/Latch, which will be removed : <Address_Int_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SRAM_Interface_Module, actual ratio is 0.
+
+Final Macro Processing ...
+
+Processing Unit <SRAM_Interface_Module> :
+	Found 2-bit shift register for signal <Led_Int_0>.
+	Found 2-bit shift register for signal <Led_Int_1>.
+	Found 2-bit shift register for signal <Led_Int_2>.
+	Found 2-bit shift register for signal <Led_Int_3>.
+Unit <SRAM_Interface_Module> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+# Shift Registers                                      : 4
+ 2-bit shift register                                  : 4
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : SRAM_Interface_Module.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 8
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 2
+#      LUT3                        : 3
+# FlipFlops/Latches                : 8
+#      FD                          : 1
+#      FDE                         : 4
+#      FDS                         : 3
+# Shift Registers                  : 4
+#      SRLC16E                     : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 36
+#      IBUF                        : 2
+#      IOBUF                       : 4
+#      OBUF                        : 26
+#      OBUFT                       : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               8  out of  11440     0%  
+ Number of Slice LUTs:                   11  out of   5720     0%  
+    Number used as Logic:                 7  out of   5720     0%  
+    Number used as Memory:                4  out of   1440     0%  
+       Number used as SRL:                4
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     11
+   Number with an unused Flip Flop:       3  out of     11    27%  
+   Number with an unused LUT:             0  out of     11     0%  
+   Number of fully used LUT-FF pairs:     8  out of     11    72%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          37
+ Number of bonded IOBs:                  37  out of    102    36%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clock                              | BUFGP                  | 12    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 1.820ns (Maximum Frequency: 549.451MHz)
+   Minimum input arrival time before clock: 3.772ns
+   Maximum output required time after clock: 5.138ns
+   Maximum combinational path delay: 6.278ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock'
+  Clock period: 1.820ns (frequency: 549.451MHz)
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               1.820ns (Levels of Logic = 0)
+  Source:            Mshreg_Led_Int_0 (FF)
+  Destination:       Led_Int_0 (FF)
+  Source Clock:      Clock rising
+  Destination Clock: Clock rising
+
+  Data Path: Mshreg_Led_Int_0 to Led_Int_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRLC16E:CLK->Q        1   1.746   0.000  Mshreg_Led_Int_0 (Mshreg_Led_Int_0)
+     FDE:D                     0.074          Led_Int_0
+    ----------------------------------------
+    Total                      1.820ns (1.820ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clock'
+  Total number of paths / destination ports: 30 / 19
+-------------------------------------------------------------------------
+Offset:              3.772ns (Levels of Logic = 2)
+  Source:            Data_DIR (PAD)
+  Destination:       Led_Int_0 (FF)
+  Destination Clock: Clock rising
+
+  Data Path: Data_DIR to Led_Int_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.328   0.949  Data_DIR_IBUF (Data_DIR_IBUF)
+     LUT2:I0->O            8   0.250   0.943  _n00781 (_n0078)
+     FDE:CE                    0.302          Led_Int_0
+    ----------------------------------------
+    Total                      3.772ns (1.880ns logic, 1.892ns route)
+                                       (49.8% logic, 50.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              5.138ns (Levels of Logic = 2)
+  Source:            CE_Int (FF)
+  Destination:       Address<0> (PAD)
+  Source Clock:      Clock rising
+
+  Data Path: CE_Int to Address<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              3   0.525   0.765  CE_Int (CE_Int)
+     INV:I->O              1   0.255   0.681  CE_inv1_INV_0 (Address_0_OBUF)
+     OBUF:I->O                 2.912          Address_0_OBUF (Address<0>)
+    ----------------------------------------
+    Total                      5.138ns (3.692ns logic, 1.446ns route)
+                                       (71.9% logic, 28.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               6.278ns (Levels of Logic = 3)
+  Source:            Data_DIR (PAD)
+  Destination:       Data<7> (PAD)
+
+  Data Path: Data_DIR to Data<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.328   0.840  Data_DIR_IBUF (Data_DIR_IBUF)
+     INV:I->O              8   0.255   0.943  Data_DIR_inv1_INV_0 (Data_DIR_inv)
+     OBUFT:T->O                2.912          Data_7_OBUFT (Data<7>)
+    ----------------------------------------
+    Total                      6.278ns (4.495ns logic, 1.783ns route)
+                                       (71.6% logic, 28.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |    1.820|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.70 secs
+ 
+--> 
+
+Total memory usage is 260000 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   54 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
