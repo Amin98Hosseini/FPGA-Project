@@ -1,0 +1,571 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml MicroBalze_Core_top.twx MicroBalze_Core_top.ncd -o
+MicroBalze_Core_top.twr MicroBalze_Core_top.pcf -ucf First_MicroBlace.ucf
+
+Design file:              MicroBalze_Core_top.ncd
+Physical constraint file: MicroBalze_Core_top.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: PATH "TS_TIG_microblaze_0_Reset_path" TIG;
+
+ 3 paths analyzed, 3 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+Paths for end point MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp (SLICE_X14Y29.B1), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     3.101ns (data path - clock path skew + uncertainty)
+  Source:               MicroBalze_Core_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Debug_Rst_i (FF)
+  Destination:          MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp (FF)
+  Data Path Delay:      3.066ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         MicroBalze_Core_i/microblaze_0_debug_Dbg_Update rising
+  Destination Clock:    MicroBalze_Core_i/clk_100_0000MHz rising
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MicroBalze_Core_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Debug_Rst_i to MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y44.AQ      Tcko                  0.430   MicroBalze_Core_i/microblaze_0_debug_Debug_Rst
+                                                       MicroBalze_Core_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Debug_Rst_i
+    SLICE_X14Y29.B1      net (fanout=1)        2.415   MicroBalze_Core_i/microblaze_0_debug_Debug_Rst
+    SLICE_X14Y29.CLK     Tas                   0.221   MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Shift_Logic_Module_I/Mmux_Using_FPGA_LUT6.Use_PCMP_instr_LUT6.shift_clz_res33
+                                                       MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_Debug_Rst_OR_2_o1
+                                                       MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp
+    -------------------------------------------------  ---------------------------
+    Total                                      3.066ns (0.651ns logic, 2.415ns route)
+                                                       (21.2% logic, 78.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp (SLICE_X14Y29.B2), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     1.946ns (data path - clock path skew + uncertainty)
+  Source:               MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/MB_Reset (FF)
+  Destination:          MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp (FF)
+  Data Path Delay:      1.797ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.047ns (0.599 - 0.646)
+  Source Clock:         MicroBalze_Core_i/clk_100_0000MHz rising
+  Destination Clock:    MicroBalze_Core_i/clk_100_0000MHz rising
+  Clock Uncertainty:    0.102ns
+
+  Clock Uncertainty:          0.102ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.191ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/MB_Reset to MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y26.AQ      Tcko                  0.430   MicroBalze_Core_i/proc_sys_reset_0_MB_Reset
+                                                       MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/MB_Reset
+    SLICE_X14Y29.B2      net (fanout=1)        1.146   MicroBalze_Core_i/proc_sys_reset_0_MB_Reset
+    SLICE_X14Y29.CLK     Tas                   0.221   MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Shift_Logic_Module_I/Mmux_Using_FPGA_LUT6.Use_PCMP_instr_LUT6.shift_clz_res33
+                                                       MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_Debug_Rst_OR_2_o1
+                                                       MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp
+    -------------------------------------------------  ---------------------------
+    Total                                      1.797ns (0.651ns logic, 1.146ns route)
+                                                       (36.2% logic, 63.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp (SLICE_X14Y29.B5), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     1.890ns (data path - clock path skew + uncertainty)
+  Source:               MicroBalze_Core_i/microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I (FF)
+  Destination:          MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp (FF)
+  Data Path Delay:      1.732ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.056ns (0.599 - 0.655)
+  Source Clock:         MicroBalze_Core_i/clk_100_0000MHz rising
+  Destination Clock:    MicroBalze_Core_i/clk_100_0000MHz rising
+  Clock Uncertainty:    0.102ns
+
+  Clock Uncertainty:          0.102ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.191ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MicroBalze_Core_i/microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I to MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y29.AQ       Tcko                  0.525   MicroBalze_Core_i/microblaze_0_dlmb_LMB_Rst
+                                                       MicroBalze_Core_i/microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I
+    SLICE_X14Y29.B5      net (fanout=3)        0.986   MicroBalze_Core_i/microblaze_0_dlmb_LMB_Rst
+    SLICE_X14Y29.CLK     Tas                   0.221   MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Shift_Logic_Module_I/Mmux_Using_FPGA_LUT6.Use_PCMP_instr_LUT6.shift_clz_res33
+                                                       MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_Debug_Rst_OR_2_o1
+                                                       MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp
+    -------------------------------------------------  ---------------------------
+    Total                                      1.732ns (0.746ns logic, 0.986ns route)
+                                                       (43.1% logic, 56.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PATH "TS_TIG_microblaze_0_Reset_path" TIG;
+--------------------------------------------------------------------------------
+
+Paths for end point MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp (SLICE_X14Y29.B2), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      0.963ns (datapath - clock path skew - uncertainty)
+  Source:               MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/MB_Reset (FF)
+  Destination:          MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp (FF)
+  Data Path Delay:      0.946ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.017ns (0.299 - 0.316)
+  Source Clock:         MicroBalze_Core_i/clk_100_0000MHz rising
+  Destination Clock:    MicroBalze_Core_i/clk_100_0000MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/MB_Reset to MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y26.AQ      Tcko                  0.198   MicroBalze_Core_i/proc_sys_reset_0_MB_Reset
+                                                       MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/MB_Reset
+    SLICE_X14Y29.B2      net (fanout=1)        0.627   MicroBalze_Core_i/proc_sys_reset_0_MB_Reset
+    SLICE_X14Y29.CLK     Tah         (-Th)    -0.121   MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Shift_Logic_Module_I/Mmux_Using_FPGA_LUT6.Use_PCMP_instr_LUT6.shift_clz_res33
+                                                       MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_Debug_Rst_OR_2_o1
+                                                       MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp
+    -------------------------------------------------  ---------------------------
+    Total                                      0.946ns (0.319ns logic, 0.627ns route)
+                                                       (33.7% logic, 66.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp (SLICE_X14Y29.B5), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      0.969ns (datapath - clock path skew - uncertainty)
+  Source:               MicroBalze_Core_i/microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I (FF)
+  Destination:          MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp (FF)
+  Data Path Delay:      0.943ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.026ns (0.299 - 0.325)
+  Source Clock:         MicroBalze_Core_i/clk_100_0000MHz rising
+  Destination Clock:    MicroBalze_Core_i/clk_100_0000MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: MicroBalze_Core_i/microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I to MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y29.AQ       Tcko                  0.234   MicroBalze_Core_i/microblaze_0_dlmb_LMB_Rst
+                                                       MicroBalze_Core_i/microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I
+    SLICE_X14Y29.B5      net (fanout=3)        0.588   MicroBalze_Core_i/microblaze_0_dlmb_LMB_Rst
+    SLICE_X14Y29.CLK     Tah         (-Th)    -0.121   MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Shift_Logic_Module_I/Mmux_Using_FPGA_LUT6.Use_PCMP_instr_LUT6.shift_clz_res33
+                                                       MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_Debug_Rst_OR_2_o1
+                                                       MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp
+    -------------------------------------------------  ---------------------------
+    Total                                      0.943ns (0.355ns logic, 0.588ns route)
+                                                       (37.6% logic, 62.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp (SLICE_X14Y29.B1), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      1.596ns (datapath - clock path skew - uncertainty)
+  Source:               MicroBalze_Core_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Debug_Rst_i (FF)
+  Destination:          MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp (FF)
+  Data Path Delay:      1.596ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         MicroBalze_Core_i/microblaze_0_debug_Dbg_Update rising
+  Destination Clock:    MicroBalze_Core_i/clk_100_0000MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: MicroBalze_Core_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Debug_Rst_i to MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y44.AQ      Tcko                  0.198   MicroBalze_Core_i/microblaze_0_debug_Debug_Rst
+                                                       MicroBalze_Core_i/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Debug_Rst_i
+    SLICE_X14Y29.B1      net (fanout=1)        1.277   MicroBalze_Core_i/microblaze_0_debug_Debug_Rst
+    SLICE_X14Y29.CLK     Tah         (-Th)    -0.121   MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Shift_Logic_Module_I/Mmux_Using_FPGA_LUT6.Use_PCMP_instr_LUT6.shift_clz_res33
+                                                       MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_Debug_Rst_OR_2_o1
+                                                       MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp
+    -------------------------------------------------  ---------------------------
+    Total                                      1.596ns (0.319ns logic, 1.277ns route)
+                                                       (20.0% logic, 80.0% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_axi4lite_0_reset_resync_path" TIG;
+
+ 8 paths analyzed, 8 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+Paths for end point MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 (SLICE_X12Y12.CLK), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     7.055ns (data path)
+  Source:               Clock (PAD)
+  Destination:          MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 (FF)
+  Data Path Delay:      7.055ns (Levels of Logic = 4)
+
+  Maximum Data Path at Slow Process Corner: Clock to MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    P85.I                Tiopi                 1.037   Clock
+                                                       Clock
+                                                       Clock_BUFGP/IBUFG
+                                                       ProtoComp148.IMUX.2
+    BUFGMUX_X3Y7.I0      net (fanout=1)        0.797   Clock_BUFGP/IBUFG
+    BUFGMUX_X3Y7.O       Tgi0o                 0.209   Clock_BUFGP/BUFG
+                                                       Clock_BUFGP/BUFG
+    PLL_ADV_X0Y0.CLKIN2  net (fanout=9)        1.770   Clock_BUFGP
+    PLL_ADV_X0Y0.CLKOUT0 Tpllcko_CLK           1.214   MicroBalze_Core_i/clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst
+                                                       MicroBalze_Core_i/clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst
+    BUFGMUX_X2Y3.I0      net (fanout=1)        0.355   MicroBalze_Core_i/clock_generator_0/clock_generator_0/SIG_PLL0_CLKOUT0
+    BUFGMUX_X2Y3.O       Tgi0o                 0.209   MicroBalze_Core_i/clock_generator_0/clock_generator_0/PLL0_CLKOUT0_BUFG_INST
+                                                       MicroBalze_Core_i/clock_generator_0/clock_generator_0/PLL0_CLKOUT0_BUFG_INST
+    SLICE_X12Y12.CLK     net (fanout=589)      1.464   MicroBalze_Core_i/clk_100_0000MHz
+    -------------------------------------------------  ---------------------------
+    Total                                      7.055ns (2.669ns logic, 4.386ns route)
+                                                       (37.8% logic, 62.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (SLICE_X12Y12.CLK), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     7.055ns (data path)
+  Source:               Clock (PAD)
+  Destination:          MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (FF)
+  Data Path Delay:      7.055ns (Levels of Logic = 4)
+
+  Maximum Data Path at Slow Process Corner: Clock to MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    P85.I                Tiopi                 1.037   Clock
+                                                       Clock
+                                                       Clock_BUFGP/IBUFG
+                                                       ProtoComp148.IMUX.2
+    BUFGMUX_X3Y7.I0      net (fanout=1)        0.797   Clock_BUFGP/IBUFG
+    BUFGMUX_X3Y7.O       Tgi0o                 0.209   Clock_BUFGP/BUFG
+                                                       Clock_BUFGP/BUFG
+    PLL_ADV_X0Y0.CLKIN2  net (fanout=9)        1.770   Clock_BUFGP
+    PLL_ADV_X0Y0.CLKOUT0 Tpllcko_CLK           1.214   MicroBalze_Core_i/clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst
+                                                       MicroBalze_Core_i/clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst
+    BUFGMUX_X2Y3.I0      net (fanout=1)        0.355   MicroBalze_Core_i/clock_generator_0/clock_generator_0/SIG_PLL0_CLKOUT0
+    BUFGMUX_X2Y3.O       Tgi0o                 0.209   MicroBalze_Core_i/clock_generator_0/clock_generator_0/PLL0_CLKOUT0_BUFG_INST
+                                                       MicroBalze_Core_i/clock_generator_0/clock_generator_0/PLL0_CLKOUT0_BUFG_INST
+    SLICE_X12Y12.CLK     net (fanout=589)      1.464   MicroBalze_Core_i/clk_100_0000MHz
+    -------------------------------------------------  ---------------------------
+    Total                                      7.055ns (2.669ns logic, 4.386ns route)
+                                                       (37.8% logic, 62.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2 (SLICE_X12Y12.CLK), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     7.055ns (data path)
+  Source:               Clock (PAD)
+  Destination:          MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2 (FF)
+  Data Path Delay:      7.055ns (Levels of Logic = 4)
+
+  Maximum Data Path at Slow Process Corner: Clock to MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    P85.I                Tiopi                 1.037   Clock
+                                                       Clock
+                                                       Clock_BUFGP/IBUFG
+                                                       ProtoComp148.IMUX.2
+    BUFGMUX_X3Y7.I0      net (fanout=1)        0.797   Clock_BUFGP/IBUFG
+    BUFGMUX_X3Y7.O       Tgi0o                 0.209   Clock_BUFGP/BUFG
+                                                       Clock_BUFGP/BUFG
+    PLL_ADV_X0Y0.CLKIN2  net (fanout=9)        1.770   Clock_BUFGP
+    PLL_ADV_X0Y0.CLKOUT0 Tpllcko_CLK           1.214   MicroBalze_Core_i/clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst
+                                                       MicroBalze_Core_i/clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst
+    BUFGMUX_X2Y3.I0      net (fanout=1)        0.355   MicroBalze_Core_i/clock_generator_0/clock_generator_0/SIG_PLL0_CLKOUT0
+    BUFGMUX_X2Y3.O       Tgi0o                 0.209   MicroBalze_Core_i/clock_generator_0/clock_generator_0/PLL0_CLKOUT0_BUFG_INST
+                                                       MicroBalze_Core_i/clock_generator_0/clock_generator_0/PLL0_CLKOUT0_BUFG_INST
+    SLICE_X12Y12.CLK     net (fanout=589)      1.464   MicroBalze_Core_i/clk_100_0000MHz
+    -------------------------------------------------  ---------------------------
+    Total                                      7.055ns (2.669ns logic, 4.386ns route)
+                                                       (37.8% logic, 62.2% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PATH "TS_axi4lite_0_reset_resync_path" TIG;
+--------------------------------------------------------------------------------
+
+Paths for end point MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2 (SLICE_X12Y12.CX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      0.620ns (datapath - clock path skew - uncertainty)
+  Source:               MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (FF)
+  Destination:          MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2 (FF)
+  Data Path Delay:      0.620ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         MicroBalze_Core_i/clk_100_0000MHz rising
+  Destination Clock:    MicroBalze_Core_i/clk_100_0000MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 to MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y12.BQ      Tcko                  0.234   MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    SLICE_X12Y12.CX      net (fanout=1)        0.345   MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<1>
+    SLICE_X12Y12.CLK     Tckdi       (-Th)    -0.041   MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.620ns (0.275ns logic, 0.345ns route)
+                                                       (44.4% logic, 55.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (SLICE_X12Y12.BX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      0.748ns (datapath - clock path skew - uncertainty)
+  Source:               MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 (FF)
+  Destination:          MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (FF)
+  Data Path Delay:      0.748ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         MicroBalze_Core_i/clk_100_0000MHz rising
+  Destination Clock:    MicroBalze_Core_i/clk_100_0000MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 to MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y12.AQ      Tcko                  0.234   MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0
+    SLICE_X12Y12.BX      net (fanout=1)        0.473   MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<0>
+    SLICE_X12Y12.CLK     Tckdi       (-Th)    -0.041   MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.748ns (0.275ns logic, 0.473ns route)
+                                                       (36.8% logic, 63.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 (SLICE_X12Y12.SR), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      1.453ns (datapath - clock path skew - uncertainty)
+  Source:               MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/Interconnect_aresetn_0 (FF)
+  Destination:          MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 (FF)
+  Data Path Delay:      1.491ns (Levels of Logic = 1)
+  Clock Path Skew:      0.038ns (0.361 - 0.323)
+  Source Clock:         MicroBalze_Core_i/clk_100_0000MHz rising
+  Destination Clock:    MicroBalze_Core_i/clk_100_0000MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/Interconnect_aresetn_0 to MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y17.AQ       Tcko                  0.198   MicroBalze_Core_i/proc_sys_reset_0_Interconnect_aresetn
+                                                       MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/Interconnect_aresetn_0
+    SLICE_X9Y13.D3       net (fanout=1)        0.400   MicroBalze_Core_i/proc_sys_reset_0_Interconnect_aresetn
+    SLICE_X9Y13.D        Tilo                  0.156   MicroBalze_Core_i/RS232/RS232/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/FIFO_Full
+                                                       MicroBalze_Core_i/axi4lite_0/axi4lite_0/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/INTERCONNECT_ARESETN_inv1_INV_0
+    SLICE_X12Y12.SR      net (fanout=1)        0.652   MicroBalze_Core_i/axi4lite_0/axi4lite_0/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/INTERCONNECT_ARESETN_inv
+    SLICE_X12Y12.CLK     Tremck      (-Th)    -0.085   MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.491ns (0.439ns logic, 1.052ns route)
+                                                       (29.4% logic, 70.6% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG_microblaze_0_dlmb_POR_FF_I_path" TIG;
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+Paths for end point MicroBalze_Core_i/microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I (SLICE_X8Y29.SR), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     1.874ns (data path - clock path skew + uncertainty)
+  Source:               MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/Bus_Struct_Reset_0 (FF)
+  Destination:          MicroBalze_Core_i/microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I (FF)
+  Data Path Delay:      1.772ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         MicroBalze_Core_i/clk_100_0000MHz rising
+  Destination Clock:    MicroBalze_Core_i/clk_100_0000MHz rising
+  Clock Uncertainty:    0.102ns
+
+  Clock Uncertainty:          0.102ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.191ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/Bus_Struct_Reset_0 to MicroBalze_Core_i/microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y25.AQ       Tcko                  0.430   MicroBalze_Core_i/proc_sys_reset_0_BUS_STRUCT_RESET
+                                                       MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/Bus_Struct_Reset_0
+    SLICE_X8Y29.SR       net (fanout=2)        0.967   MicroBalze_Core_i/proc_sys_reset_0_BUS_STRUCT_RESET
+    SLICE_X8Y29.CLK      Tsrck                 0.375   MicroBalze_Core_i/microblaze_0_dlmb_LMB_Rst
+                                                       MicroBalze_Core_i/microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I
+    -------------------------------------------------  ---------------------------
+    Total                                      1.772ns (0.805ns logic, 0.967ns route)
+                                                       (45.4% logic, 54.6% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PATH "TS_TIG_microblaze_0_dlmb_POR_FF_I_path" TIG;
+--------------------------------------------------------------------------------
+
+Paths for end point MicroBalze_Core_i/microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I (SLICE_X8Y29.SR), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      0.692ns (datapath - clock path skew - uncertainty)
+  Source:               MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/Bus_Struct_Reset_0 (FF)
+  Destination:          MicroBalze_Core_i/microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I (FF)
+  Data Path Delay:      0.705ns (Levels of Logic = 0)
+  Clock Path Skew:      0.013ns (0.045 - 0.032)
+  Source Clock:         MicroBalze_Core_i/clk_100_0000MHz rising
+  Destination Clock:    MicroBalze_Core_i/clk_100_0000MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/Bus_Struct_Reset_0 to MicroBalze_Core_i/microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y25.AQ       Tcko                  0.198   MicroBalze_Core_i/proc_sys_reset_0_BUS_STRUCT_RESET
+                                                       MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/Bus_Struct_Reset_0
+    SLICE_X8Y29.SR       net (fanout=2)        0.482   MicroBalze_Core_i/proc_sys_reset_0_BUS_STRUCT_RESET
+    SLICE_X8Y29.CLK      Tcksr       (-Th)    -0.025   MicroBalze_Core_i/microblaze_0_dlmb_LMB_Rst
+                                                       MicroBalze_Core_i/microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I
+    -------------------------------------------------  ---------------------------
+    Total                                      0.705ns (0.223ns logic, 0.482ns route)
+                                                       (31.6% logic, 68.4% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG_microblaze_0_ilmb_POR_FF_I_path" TIG;
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+Paths for end point MicroBalze_Core_i/microblaze_0_ilmb/microblaze_0_ilmb/POR_FF_I (SLICE_X8Y41.SR), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     2.701ns (data path - clock path skew + uncertainty)
+  Source:               MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/Bus_Struct_Reset_0 (FF)
+  Destination:          MicroBalze_Core_i/microblaze_0_ilmb/microblaze_0_ilmb/POR_FF_I (FF)
+  Data Path Delay:      2.570ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.029ns (0.708 - 0.737)
+  Source Clock:         MicroBalze_Core_i/clk_100_0000MHz rising
+  Destination Clock:    MicroBalze_Core_i/clk_100_0000MHz rising
+  Clock Uncertainty:    0.102ns
+
+  Clock Uncertainty:          0.102ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.191ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/Bus_Struct_Reset_0 to MicroBalze_Core_i/microblaze_0_ilmb/microblaze_0_ilmb/POR_FF_I
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y25.AQ       Tcko                  0.430   MicroBalze_Core_i/proc_sys_reset_0_BUS_STRUCT_RESET
+                                                       MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/Bus_Struct_Reset_0
+    SLICE_X8Y41.SR       net (fanout=2)        1.765   MicroBalze_Core_i/proc_sys_reset_0_BUS_STRUCT_RESET
+    SLICE_X8Y41.CLK      Tsrck                 0.375   MicroBalze_Core_i/microblaze_0_ilmb_LMB_Rst
+                                                       MicroBalze_Core_i/microblaze_0_ilmb/microblaze_0_ilmb/POR_FF_I
+    -------------------------------------------------  ---------------------------
+    Total                                      2.570ns (0.805ns logic, 1.765ns route)
+                                                       (31.3% logic, 68.7% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PATH "TS_TIG_microblaze_0_ilmb_POR_FF_I_path" TIG;
+--------------------------------------------------------------------------------
+
+Paths for end point MicroBalze_Core_i/microblaze_0_ilmb/microblaze_0_ilmb/POR_FF_I (SLICE_X8Y41.SR), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      1.156ns (datapath - clock path skew - uncertainty)
+  Source:               MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/Bus_Struct_Reset_0 (FF)
+  Destination:          MicroBalze_Core_i/microblaze_0_ilmb/microblaze_0_ilmb/POR_FF_I (FF)
+  Data Path Delay:      1.164ns (Levels of Logic = 0)
+  Clock Path Skew:      0.008ns (0.349 - 0.341)
+  Source Clock:         MicroBalze_Core_i/clk_100_0000MHz rising
+  Destination Clock:    MicroBalze_Core_i/clk_100_0000MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/Bus_Struct_Reset_0 to MicroBalze_Core_i/microblaze_0_ilmb/microblaze_0_ilmb/POR_FF_I
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y25.AQ       Tcko                  0.198   MicroBalze_Core_i/proc_sys_reset_0_BUS_STRUCT_RESET
+                                                       MicroBalze_Core_i/proc_sys_reset_0/proc_sys_reset_0/Bus_Struct_Reset_0
+    SLICE_X8Y41.SR       net (fanout=2)        0.941   MicroBalze_Core_i/proc_sys_reset_0_BUS_STRUCT_RESET
+    SLICE_X8Y41.CLK      Tcksr       (-Th)    -0.025   MicroBalze_Core_i/microblaze_0_ilmb_LMB_Rst
+                                                       MicroBalze_Core_i/microblaze_0_ilmb/microblaze_0_ilmb/POR_FF_I
+    -------------------------------------------------  ---------------------------
+    Total                                      1.164ns (0.223ns logic, 0.941ns route)
+                                                       (19.2% logic, 80.8% route)
+
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |    2.919|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 13 paths, 0 nets, and 19 connections
+
+Design statistics:
+No global statistics to report.
+
+Analysis completed Fri May 02 18:46:31 2025 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 236 MB
+
+
+

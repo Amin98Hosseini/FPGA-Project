@@ -1,0 +1,68 @@
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm edkBmmFile.bmm -p xc6slx9-tqg144-2 MicroBalze_Core_top.ngc MicroBalze_Core_top.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ngd MicroBalze_Core_top.pcf 
+par -w -intstyle ise -ol high -mt off MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ncd MicroBalze_Core_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MicroBalze_Core_top.twx MicroBalze_Core_top.ncd -o MicroBalze_Core_top.twr MicroBalze_Core_top.pcf 
+bitgen -intstyle ise -f MicroBalze_Core_top.ut MicroBalze_Core_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc First_MicroBlace.ucf -bm edkBmmFile.bmm -p xc6slx9-tqg144-2 MicroBalze_Core_top.ngc MicroBalze_Core_top.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ngd MicroBalze_Core_top.pcf 
+par -w -intstyle ise -ol high -mt off MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ncd MicroBalze_Core_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MicroBalze_Core_top.twx MicroBalze_Core_top.ncd -o MicroBalze_Core_top.twr MicroBalze_Core_top.pcf -ucf First_MicroBlace.ucf 
+bitgen -intstyle ise -f MicroBalze_Core_top.ut MicroBalze_Core_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc First_MicroBlace.ucf -bm edkBmmFile.bmm -p xc6slx9-tqg144-2 MicroBalze_Core_top.ngc MicroBalze_Core_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc First_MicroBlace.ucf -bm edkBmmFile.bmm -p xc6slx9-tqg144-2 MicroBalze_Core_top.ngc MicroBalze_Core_top.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ngd MicroBalze_Core_top.pcf 
+par -w -intstyle ise -ol high -mt off MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ncd MicroBalze_Core_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MicroBalze_Core_top.twx MicroBalze_Core_top.ncd -o MicroBalze_Core_top.twr MicroBalze_Core_top.pcf -ucf First_MicroBlace.ucf 
+bitgen -intstyle ise -f MicroBalze_Core_top.ut MicroBalze_Core_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc First_MicroBlace.ucf -bm edkBmmFile.bmm -p xc6slx9-tqg144-2 MicroBalze_Core_top.ngc MicroBalze_Core_top.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ngd MicroBalze_Core_top.pcf 
+par -w -intstyle ise -ol high -mt off MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ncd MicroBalze_Core_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MicroBalze_Core_top.twx MicroBalze_Core_top.ncd -o MicroBalze_Core_top.twr MicroBalze_Core_top.pcf -ucf First_MicroBlace.ucf 
+bitgen -intstyle ise -f MicroBalze_Core_top.ut MicroBalze_Core_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc First_MicroBlace.ucf -bm edkBmmFile.bmm -p xc6slx9-tqg144-2 MicroBalze_Core_top.ngc MicroBalze_Core_top.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ngd MicroBalze_Core_top.pcf 
+par -w -intstyle ise -ol high -mt off MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ncd MicroBalze_Core_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MicroBalze_Core_top.twx MicroBalze_Core_top.ncd -o MicroBalze_Core_top.twr MicroBalze_Core_top.pcf -ucf First_MicroBlace.ucf 
+bitgen -intstyle ise -f MicroBalze_Core_top.ut MicroBalze_Core_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc First_MicroBlace.ucf -bm edkBmmFile.bmm -p xc6slx9-tqg144-2 MicroBalze_Core_top.ngc MicroBalze_Core_top.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ngd MicroBalze_Core_top.pcf 
+par -w -intstyle ise -ol high -mt off MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ncd MicroBalze_Core_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MicroBalze_Core_top.twx MicroBalze_Core_top.ncd -o MicroBalze_Core_top.twr MicroBalze_Core_top.pcf -ucf First_MicroBlace.ucf 
+bitgen -intstyle ise -f MicroBalze_Core_top.ut MicroBalze_Core_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc First_MicroBlace.ucf -bm edkBmmFile.bmm -p xc6slx9-tqg144-2 MicroBalze_Core_top.ngc MicroBalze_Core_top.ngd  
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc First_MicroBlace.ucf -bm edkBmmFile.bmm -p xc6slx9-tqg144-2 MicroBalze_Core_top.ngc MicroBalze_Core_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc First_MicroBlace.ucf -bm edkBmmFile.bmm -p xc6slx9-tqg144-2 MicroBalze_Core_top.ngc MicroBalze_Core_top.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ngd MicroBalze_Core_top.pcf 
+par -w -intstyle ise -ol high -mt off MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ncd MicroBalze_Core_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MicroBalze_Core_top.twx MicroBalze_Core_top.ncd -o MicroBalze_Core_top.twr MicroBalze_Core_top.pcf -ucf First_MicroBlace.ucf 
+bitgen -intstyle ise -f MicroBalze_Core_top.ut MicroBalze_Core_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc First_MicroBlace.ucf -bm edkBmmFile.bmm -p xc6slx9-tqg144-2 MicroBalze_Core_top.ngc MicroBalze_Core_top.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ngd MicroBalze_Core_top.pcf 
+par -w -intstyle ise -ol high -mt off MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ncd MicroBalze_Core_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MicroBalze_Core_top.twx MicroBalze_Core_top.ncd -o MicroBalze_Core_top.twr MicroBalze_Core_top.pcf -ucf First_MicroBlace.ucf 
+bitgen -intstyle ise -f MicroBalze_Core_top.ut MicroBalze_Core_top.ncd 
+xst -intstyle ise -ifn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.xst" -ofn "C:/Users/Amin/Desktop/ChipScope-Session-4-Examles/First_MicroBlaze/MicroBalze_Core_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc First_MicroBlace.ucf -bm edkBmmFile.bmm -p xc6slx9-tqg144-2 MicroBalze_Core_top.ngc MicroBalze_Core_top.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ngd MicroBalze_Core_top.pcf 
+par -w -intstyle ise -ol high -mt off MicroBalze_Core_top_map.ncd MicroBalze_Core_top.ncd MicroBalze_Core_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MicroBalze_Core_top.twx MicroBalze_Core_top.ncd -o MicroBalze_Core_top.twr MicroBalze_Core_top.pcf -ucf First_MicroBlace.ucf 
+bitgen -intstyle ise -f MicroBalze_Core_top.ut MicroBalze_Core_top.ncd 

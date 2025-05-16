@@ -1,0 +1,50 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri May 02 18:46:19 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "RX" LOCATE = SITE "P40" LEVEL 1;
+COMP "TX" LOCATE = SITE "P41" LEVEL 1;
+COMP "Up_Down_Key" LOCATE = SITE "P79" LEVEL 1;
+COMP "Clock" LOCATE = SITE "P85" LEVEL 1;
+COMP "Reset" LOCATE = SITE "P74" LEVEL 1;
+COMP "LEDS_O<0>" LOCATE = SITE "P105" LEVEL 1;
+COMP "LEDS_O<1>" LOCATE = SITE "P104" LEVEL 1;
+COMP "LEDS_O<2>" LOCATE = SITE "P102" LEVEL 1;
+COMP "LEDS_O<3>" LOCATE = SITE "P101" LEVEL 1;
+COMP "Seven_Segment<0>" LOCATE = SITE "P100" LEVEL 1;
+COMP "Seven_Segment<1>" LOCATE = SITE "P99" LEVEL 1;
+COMP "Seven_Segment<2>" LOCATE = SITE "P98" LEVEL 1;
+COMP "Seven_Segment<3>" LOCATE = SITE "P97" LEVEL 1;
+COMP "Seven_Segment<4>" LOCATE = SITE "P95" LEVEL 1;
+COMP "Seven_Segment<5>" LOCATE = SITE "P94" LEVEL 1;
+COMP "Seven_Segment<6>" LOCATE = SITE "P93" LEVEL 1;
+COMP "Seven_Segment<7>" LOCATE = SITE "P92" LEVEL 1;
+TIMEGRP microblaze_0_ilmb_POR_FF_I_dst = BEL
+        "MicroBalze_Core_i/microblaze_0_ilmb/microblaze_0_ilmb/POR_FF_I";
+TIMEGRP microblaze_0_dlmb_POR_FF_I_dst = BEL
+        "MicroBalze_Core_i/microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I";
+TIMEGRP axi4lite_0_reset_resync = BEL
+        "MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0"
+        BEL
+        "MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1"
+        BEL
+        "MicroBalze_Core_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2";
+TIMEGRP microblaze_0_Reset_dst = BEL
+        "MicroBalze_Core_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp";
+TIMEGRP axi4lite_0_reset_source = FFS(*) PADS(*);
+TIMEGRP "FFS" = FFS(*);
+PATH TS_TIG_microblaze_0_Reset_path = FROM TIMEGRP "FFS" TO TIMEGRP
+        "microblaze_0_Reset_dst";
+PATH "TS_TIG_microblaze_0_Reset_path" TIG;
+PATH TS_axi4lite_0_reset_resync_path = FROM TIMEGRP "axi4lite_0_reset_source"
+        TO TIMEGRP "axi4lite_0_reset_resync";
+PATH "TS_axi4lite_0_reset_resync_path" TIG;
+PATH TS_TIG_microblaze_0_dlmb_POR_FF_I_path = FROM TIMEGRP "FFS" TO TIMEGRP
+        "microblaze_0_dlmb_POR_FF_I_dst";
+PATH "TS_TIG_microblaze_0_dlmb_POR_FF_I_path" TIG;
+PATH TS_TIG_microblaze_0_ilmb_POR_FF_I_path = FROM TIMEGRP "FFS" TO TIMEGRP
+        "microblaze_0_ilmb_POR_FF_I_dst";
+PATH "TS_TIG_microblaze_0_ilmb_POR_FF_I_path" TIG;
+SCHEMATIC END;
+

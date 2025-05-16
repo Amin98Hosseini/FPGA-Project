@@ -1,0 +1,28 @@
+NET	"Clock" 									LOC = p85;
+
+NET	"LEDS_O[0]" 					LOC = p105;
+NET	"LEDS_O[1]" 					LOC = p104;
+NET	"LEDS_O[2]" 					LOC = p102;
+NET	"LEDS_O[3]" 					LOC = p101;
+
+NET	"Seven_Segment[0]"		LOC = p100;		# a segment
+NET	"Seven_Segment[1]"		LOC = p99;		# b segment
+NET	"Seven_Segment[2]"		LOC = p98;		# c segment
+NET	"Seven_Segment[3]"		LOC = p97;		# d segment
+NET	"Seven_Segment[4]"		LOC = p95;		# e segment
+NET	"Seven_Segment[5]"		LOC = p94;		# f segment
+NET	"Seven_Segment[6]"		LOC = p93;		# g segment
+NET	"Seven_Segment[7]"		LOC = p92;		# p segment
+
+NET "Reset" 	LOC = p74;
+NET "Up_Down_Key" 	LOC = p79;
+
+#NET	"BCD_Digit[0]"			LOC = p74;
+#NET	"BCD_Digit[1]"			LOC = p79;
+#NET	"BCD_Digit[2]"			LOC = p81;
+#NET	"BCD_Digit[3]"			LOC = p84;
+
+
+NET	"Tx"							LOC = p41;
+NET	"Rx"							LOC = p40;
+

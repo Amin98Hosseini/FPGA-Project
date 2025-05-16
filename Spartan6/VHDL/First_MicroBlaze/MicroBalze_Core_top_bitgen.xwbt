@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Amin\Desktop\ChipScope-Session-4-Examles\First_MicroBlaze\MicroBalze_Core_top.ncd
+OUTFILE=C:\Users\Amin\Desktop\ChipScope-Session-4-Examles\First_MicroBlaze\MicroBalze_Core_top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=C:\Users\Amin\Desktop\ChipScope-Session-4-Examles\First_MicroBlaze
+LICENSE=WebPack
+USER_INFO=__0_0_0
