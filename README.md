@@ -56,6 +56,7 @@ Here is a list of the available examples in this repository:
 29. **ChipScope Counter Test** :Implementation HDL Code Usage ChipScope In Simple Counter With Vhdl.
 30. **ChipScope RS232Rx Test** :Implementation HDL Code Usage ChipScope In Rs232Rx Module With Vhdl.
 31. **SRAM Interface Module** :Implementation HDL Code Interface SRAM With Vhdl.
+32. **Micro Blaze** :Implementation Micro Blaze And HDL Code (Usart and Binary Counter On MicroBlaze And 7Segment Counter On HDL).
 
 Each example is contained in its own folder with the corresponding VHDL file(s).
 
